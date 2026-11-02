@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="shell-type" content="web_standard"/>
+  <title>Saythala Microfinance</title>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="TW/tailwind-config.js"></script>
+
+  <!-- Custom Styles & Tailwind Config -->
+  <link rel="stylesheet" href="cs/style.css"/>
+  
+</head>
+<body class="bg-background text-on-surface font-body-md text-body-md min-h-screen flex flex-col">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between gap-4">
+      
+      <!-- Logo & Brand -->
+      <div class="flex items-center gap-3">
+        <img alt="Saythala Logo" class="h-8 w-auto object-contain" src="img/logo.png"/>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Saythala</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">ສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-spacing-lg h-full">
+        <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">ໜ້າຫຼັກ</a>
+        <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">ກ່ຽວກັບພວກເຮົາ</a>
+        <a aria-current="page" class="h-full flex items-center px-spacing-2xs transition-colors text-secondary border-b-2 border-secondary font-headline-sm" href="services.html">ບໍລິການສິນເຊຶ່ອ</a>
+        <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a>
+        <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a>
+      </nav>
+
+      <!-- Header Actions & Mobile Menu Toggle -->
+       <div class="flex items-center gap-spacing-md">
+        <a class="hidden sm:inline-flex items-center justify-center bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md px-spacing-lg py-spacing-xs rounded-lg shadow-sm transition-all focus:outline-none" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a>
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-menu" class="hidden lg:hidden border-t border-outline-variant/20 bg-surface-container-lowest px-4 py-3 flex-col gap-2">
+      <a class="px-3 py-2 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" href="index.html">ໜ້າຫຼັກ</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" href="about.html">ກ່ຽວກັບພວກເຮົາ</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-on-secondary-container bg-secondary-container font-semibold" href="services.html">ບໍລິການທາງການເງິນ</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a>
+      <a class="px-3 py-2 rounded-lg font-label-md text-on-surface-variant hover:bg-surface-container-low transition-colors" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a>
+      <a class="sm:hidden mt-2 w-full text-center py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md" href="#consultation-form">
+        ຕິດຕໍ່ພວກເຮົາ
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="w-full pt-20 bg-background flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col w-full">
+      <div class="w-full max-w-[1020px] mx-auto py-6 md:py-10 space-y-10 md:space-y-12">
+        <!-- 2. Hero Section -->
+        <section class="w-full px-4 md:px-8 max-w-4xl mx-auto mb-10">
+          <div class="rounded-2xl overflow-hidden shadow-md bg-surface-container-lowest">
+            <img alt="ເຈົ້າໜ້າທີ່ໃຫ້ຄຳປຶກສາທາງການເງິນໂອ້ລົມ ແລະ ກວດກາເອກະສານບັນຊີຮ່ວມກັບເຈົ້າຂອງທຸລະກິດຂະໜາດຍ່ອມຢ່າງໃກ້ຊິດ" class="w-full h-full  object-cover object-center" src="img/baipiw2.png">
+          </div>
+          <p class="font-body-sm text-body-sm italic text-center text-on-surface-variant mt-3">“ການກວດສອບສະຖານະພາບທາງການເງິນເປັນປະຈຳ ຊ່ວຍໃຫ້ທ່ານຮັບມືກັບບັນຫາໄດ້ທັນທ່ວງທີ”</p>
+        <div class="relative z-10 mt-8 pt-6 grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-surface-container/50">
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+              <span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+              <div>
+                <h4 class="font-label-md text-label-md text-on-surface font-bold">ວົງເງິນປະເມີນຕາມສັກກະຍະພາບ</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">ພິຈາລະນາຈາກລາຍຮັບ ແລະ ຄວາມສາມາດໃນການຜ່ອນຊຳລະ</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+              <span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">date_range</span>
+              <div>
+                <h4 class="font-label-md text-label-md text-on-surface font-bold">ໄລຍະການຜ່ອນ ສູງສຸດ 60 ເດືອນ</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">ປັບຕາຕະລາງຜ່ອນໃຫ້ສອດຄ່ອງກັບຮອບວຽນເງິນຂອງທຸລະກິດ</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low">
+              <span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">visibility</span>
+              <div>
+                <h4 class="font-label-md text-label-md text-on-surface font-bold">ອະນຸມັດໂປ່ງໃສ ກວດສອບໄດ້</h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">ບໍ່ມີຄ່າທຳນຽມແອບແຝງ ບໍ່ມີຄ່າສ່ວນຕ່າງລ່ວງໜ້າ</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Service Advantages -->
+        <section class="space-y-6">
+          <div class="text-center max-w-2xl mx-auto space-y-2">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">ETHICAL LENDING VALUES</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">ຈຸດເດັ່ນຂອງສິນເຊື່ອໃບຕາດິນສາຍທາລາ</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              ພວກເຮົາຍຶດໝັ້ນແນວທາງສິນເຊື່ອຢ່າງມີຄວາມຮັບຜິດຊອບ (Responsible Microfinance) ສຸມໃສ່ການເສີມສ້າງສະພາບຄ່ອງໃຫ້ທຸລະກິດເດີນໜ້າຢ່າງໝັ້ນຄົງ ໂດຍບໍ່ສ້າງພາລະໜີ້ເກີນຕົວ
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            <!-- Advantage 1 -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                  <span class="material-symbols-outlined text-[26px]">percent</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">ດອກເບ້ຍເປັນທຳ ແລະ ໂປ່ງໃສ</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  ຄິດໄລ່ອັດຕາດອກເບ້ຍຕາມລະບຽບການຂອງທະນາຄານແຫ່ງ ສປປ ລາວ, ການຄຳນວນແບບດອກຟິກ (Effective Rate) ໃນການຈ່າຍຕົ້ນ ແລະ ດອກເບ້ຍຄົງທີ
+                </p>
+              </div>
+              <div class="mt-6 pt-4 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold border-t border-surface-container-low">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span>ດອກຄົງທີງ</span>
+              </div>
+            </div>
+            <!-- Advantage 2 -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[26px]">contract</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">ສັນຍາເປັນທຳ ບໍ່ຊັບຊ້ອນ</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  ຊີ້ແຈງເງື່ອນໄຂ ລາຍລະອຽດ ແລະ ຕາຕະລາງການຜ່ອນຊຳລະແຕ່ລະງວດຢ່າງຈະແຈ້ງກົງໄປກົງມາ ບໍ່ມີດອກເບ້ຍແຝງ ພ້ອມມອບສຳເນົາສັນຍາຄົບຊຸດຫຼັງລົງລາຍເຊັນ
+                </p>
+              </div>
+              <div class="mt-6 pt-4 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold border-t border-surface-container-low">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span>ມີຕາຕະລາງຜ່ອນຊຳລະຈະແຈ້ງ</span>
+              </div>
+            </div>
+            <!-- Advantage 3 -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[26px]">support_agent</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">ປຶກສາຟຣີ ບໍ່ມີຄ່າໃຊ້ຈ່າຍລ່ວງໜ້າ</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  ເຈົ້າໜ້າທີ່ຜູ້ຊ່ຽວຊານພ້ອມຮ່ວມວິເຄາະສັດສ່ວນພາລະໜີ້ຕໍ່ລາຍໄດ້ (DSR) ແລະ ວາງແຜນໝູນວຽນທຶນ ໂດຍບໍ່ມີການຮຽກເກັບຄ່າທຳນຽມລ່ວງໜ້າໃດໆທັງສິ້ນ
+                </p>
+              </div>
+              <div class="mt-6 pt-4 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold border-t border-surface-container-low">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                <span>ບໍ່ມີຄ່າທຳນຽມກ່ອນອະນຸມັດ</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Interactive Loan Calculator -->
+       
+
+        <!-- 5. Required Documents -->
+        <section class="space-y-6">
+          <div>
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">CHECKLIST</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">ເອກະສານທີ່ຕ້ອງກຽມໃນການຍື່ນຂໍສິນເຊື່ອ</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">ກຽມເອກະສານໃຫ້ພ້ອມເພື່ອຄວາມວ່ອງໄວໃນການກວດສອບ ປະເມີນພື້ນທີ່ ແລະ ອະນຸມັດຕົວຈິງ</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Personal Documents -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[22px]">badge</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">1. ເອກະສານສ່ວນບຸກຄົນ</h3>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Personal Identification</span>
+                </div>
+              </div>
+              <ul class="space-y-3 font-body-md text-body-md text-on-surface">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ສຳເນົາບັດປະຈຳຕົວປະຊາຊົນ,ສຳເນົາປຶ້ມສຳມະໂນຄົວ ຫຼື ພາດສະປອດ (ທີ່ຍັງບໍ່ໝົດອາຍຸ ແລະ ຊັດເຈນ)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ໃບຢັ້ງຢືນທີ່ຢູ່ ຫຼື ເອກະສານຮັບຮອງທີ່ພັກອາໄສຈາກນາຍບ້ານ (ກໍລະນີບໍ່ກົງກັບສຳມະໂນຄົວ)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ໃບທະບຽນວິສາຫະກິດ,ໃບທະບຽນອາກອນ (ກໍລະນີເປັນເຈົ້າຂອງທຸລະກິດ)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Collateral Documents -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[22px]">domain</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">2. ເອກະສານຫຼັກຊັບ ແລະ ລາຍໄດ້</h3>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">Collateral & Income Proof</span>
+                </div>
+              </div>
+              <ul class="space-y-3 font-body-md text-body-md text-on-surface">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ໃບຕາດິນ ຕົວຈິງ (ຂອບເຂດຊັດເຈນ ຖືກຕ້ອງຕາມສາຍທາງ ແລະ ເປັນຊື່ຂອງຜູ້ກູ້ ຫຼື ຜູ້ຄ້ຳປະກັນ)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ແຜນທີ່ສັງເຂບສະແດງຕຳແໜ່ງທີ່ຕັ້ງຂອງດິນ ເພື່ອຄວາມສະດວກໃນການລົງພື້ນທີ່ກວດກາຕົວຈິງ</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">check_circle</span>
+                  <span>ເອກະສານສະແດງລາຍໄດ້ (Bank Statement) ຍ້ອນຫຼັງ 3 - 6 ເດືອນ</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-surface-container-low flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">lightbulb</span>
+            <div class="font-body-sm text-body-sm text-on-surface">
+              <span class="font-semibold text-on-surface">ຂໍ້ຄວນຮູ້ສຳຄັນ:</span>
+              ຫາກເປັນໃບຕາດິນທີ່ມີກຳມະສິດຮ່ວມກັນຫຼາຍກວ່າ 1 ຄົນ ຈະຕ້ອງໄດ້ຮັບຄວາມຍິນຍອມ ແລະ ເຊັນເອກະສານຍິນຍອມເປັນຫຼັກຊັບຄ້ຳປະກັນຈາກຜູ້ມີກຳມະສິດທຸກຄົນກ່ອນການເຮັດສັນຍາ
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. Loan Process Steps -->
+        <section class="space-y-6">
+          <div>
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">CLEAR STEPS</span>
+            <h2 class="font-headline-xl text-headline-xl text-on-surface">4 ຂັ້ນຕອນການອະນຸມັດສິນເຊື່ອທີ່ສະດວກວ່ອງໄວ</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">ຂະບວນການໂປ່ງໃສ ກວດສອບໄດ້ທຸກຂັ້ນຕອນ ຕັ້ງແຕ່ເລີ່ມປຶກສາຈົນຮອດການເບີກຈ່າຍເງິນທຶນ</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-3 relative">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-xl text-headline-xl font-bold text-surface-container">01</span>
+                <div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                  <span class="material-symbols-outlined text-[18px]">description</span>
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">ຍື່ນເອກະສານ & ປຶກສາ</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                 ສາມາດໂທຕິດຕໍ່ສອບຖາມໄດ້ຜ່ານເບີຫ້ອງການ ຫຼື ເຂົ້າມາຕິດຕໍ່ທີ່ຫ້ອງການ ເພື່ອແຈ້ງຄວາມຕ້ອງການ ແລະ ຈຸດປະສົງການນຳໃຊ້
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-3 relative">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-xl text-headline-xl font-bold text-surface-container">02</span>
+                <div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[18px]">location_searching</span>
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">ລົງພື້ນທີ່ປະເມີນ</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                ເຈົ້າໜ້າທີ່ສິນເຊື່ອກວດສອບຕຳແໜ່ງທີ່ດິນຕົວຈິງ ສຳຫຼວດສະພາບ ແລະ ປະເມີນສັກກະຍະພາບການຊຳລະຮ່ວມກັບຜູ້ກູ້
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-3 relative">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-xl text-headline-xl font-bold text-surface-container">03</span>
+                <div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+                  <span class="material-symbols-outlined text-[18px]">draw</span>
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">ແຈ້ງຜົນ ແລະ ເຮັດສັນຍາ</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                ຊີ້ແຈງວົງເງິນທີ່ໄດ້ຮັບອະນຸມັດ ດອກເບ້ຍ ແລະ ຕາຕະລາງງວດຢ່າງລະອຽດ ພ້ອມລົງນາມສັນຍາຕໍ່ໜ້າເຈົ້າໜ້າທີ່
+              </p>
+            </div>
+
+            <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm space-y-3 relative">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-xl text-headline-xl font-bold text-secondary-fixed">04</span>
+                <div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[18px]">payments</span>
+                </div>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">ຮັບເງິນສິນເຊື່ອ</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                ໂອນເງິນເຂົ້າບັນຊີທະນາຄານຂອງຜູ້ກູ້ໂດຍກົງ ຢ່າງປອດໄພ ພ້ອມຮັບສຳເນົາສັນຍາ ແລະ ຕາຕະລາງຜ່ອນຊຳລະກັບບ້ານທັນທີ
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. Application Form -->
+        
+
+       
+
+        <!-- 10. Community Trust Banner -->
+        <section class="rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="space-y-4">
+            <span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">COMMUNITY EMPOWERMENT</span>
+            <h3 class="font-headline-xl text-headline-xl text-on-surface">ສ້າງໂອກາດ ປົດລັອກສັກກະຍະພາບຊຸມຊົນ</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              ສາຍທາລາເຊື່ອໝັ້ນວ່າການເຂົ້າເຖິງແຫຼ່ງທຶນຢ່າງມີຄວາມຮັບຜິດຊອບແລະຖືກຕ້ອງຕາມກົດໝາຍ ຈະຊ່ວຍໃຫ້ຜູ້ປະກອບການໃນທ້ອງຖິ່ນເຕີບໂຕຢ່າງໝັ້ນຄົງ ໂດຍບໍ່ຕ້ອງເພິ່ງພາໜີ້ນອກລະບົບ
+            </p>
+            <div class="pt-2 flex items-center gap-6">
+              <div>
+                <span class="font-numeric-stat text-numeric-stat text-on-surface font-bold">100%</span>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">ໂປ່ງໃສຕາມເກນທີ່ກຳນົດ</p>
+              </div>
+              <div class="h-8 w-px bg-surface-container"></div>
+              <div>
+                <span class="font-numeric-stat text-numeric-stat text-secondary font-bold">24 ຊມ.</span>
+                <p class="font-label-sm text-label-sm text-on-surface-variant">ຕອບຮັບຄຳປຶກສາເບື້ອງຕົ້ນ</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-sm">
+            <img class="w-full h-56 md:h-64 object-cover" alt="Financial advisors consulting with client" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXhhxS6aN5sePiRWQnQresSHK8RN8AkDY5Xj9icALG_CMJTtItpoyf4sZc7DDSQvC3UyZUkVKxGay0x807FHHyC26nPCXTe34DpHCZ_hTaXgu2WwOpsZlbMZSiSPTIfNbTkCgICp4Sjy_lAn65-lu31zTfg5rpPsoZaGWMNiX_MItLNb3OTbKVe4vzcxCntJbydGPFqCTEGjNjSuLzLajZdvCicFzAKqoTgL4kEFny"/>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-primary-container text-on-surface-variant pt-spacing-3xl pb-spacing-xl border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-spacing-xl pb-spacing-2xl border-b border-outline-variant/15">
+        <div class="lg:col-span-4 flex flex-col gap-spacing-md">
+          <div class="flex items-center gap-spacing-sm">
+            <span class="font-headline-md text-headline-md text-surface-bright tracking-tight">ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບຝາກ ສາຍທາລາ</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">ສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ຊຸມຊົນ ແລະ ຜູ້ປະກອບການຂະໜາດນ້ອຍ ຜ່ານສິນເຊື່ອທີ່ເຂົ້າເຖິງງ່າຍ, ໂປ່ງໃສ, ບໍ່ຮັບເງິນຝາກ.</p>
+          <div class="bg-surface-variant/10 rounded-lg p-spacing-sm border border-outline-variant/20 max-w-sm">
+            <div class="flex items-center gap-spacing-xs text-secondary-fixed mb-spacing-2xs">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span class="font-label-sm text-label-sm tracking-wide font-semibold">ສະຖາບັນທີ່ໄດ້ຮັບອະນຸຍາດຖືກຕ້ອງ</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-primary-container">ໄດ້ຮັບອະນຸຍາດເປັນສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ ພາຍໃຕ້ການກຳກັບດູແລຂອງທະນາຄານແຫ່ງ ສປປ ລາວ.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ໜ້າຫຼັກ</span>
+          <ul class="flex flex-col gap-spacing-xs">
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="home" href="index.html">ໜ້າຫຼັກ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="about-us" href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-services" href="services.html">ບໍລິການສິນເຊຶ່ອ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-literacy" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="contact-us" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ສຳນັກງານໃຫຍ່ &amp; ຂໍ້ມູນຕິດຕໍ່</span>
+          <div class="flex flex-col gap-spacing-xs font-body-md text-body-md text-on-primary-container">
+            <p class="text-on-primary-container">ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ໂທ:</span> +856 20 54 223 333 , 020 52 413 333 / WhatsApp: +856 20 59 553 333</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ອີເມວ:</span> saythala.microfinance@gmail.com</p>
+            <div class="pt-spacing-2xs border-t border-outline-variant/15 mt-spacing-2xs">
+              <span class="font-label-sm text-label-sm text-surface-bright block">ໂມງລັດຖະການ</span>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ຈັນ - ສຸກ: 08:30 - 17:00</p>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ເສົາ - ອາທິດ: ປິດ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-spacing-lg flex flex-col sm:flex-row items-center justify-between gap-spacing-md">
+        <p class="font-body-sm text-body-sm text-on-primary-container">© 2025 ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບເງິນຝາກ ສາຍທາລາ . ສະຫງວນລິຂະສິດ.</p>
+        <div class="flex items-center gap-spacing-md font-body-sm text-body-sm text-on-primary-container">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

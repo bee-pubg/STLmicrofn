@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="lo">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>Saythala Microfinance</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Lao:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="cs/style.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="TW/tailwind-config.js">
+  </script>
+ </head>
+ <body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between">
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+   <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter">
+    <div class="flex items-center gap-spacing-md shrink-0">
+     <img alt="Brand logo. - Primary color: #0a192f
+- Font: phetsarath ot
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="img/logo.png"/>
+     <div class="flex flex-col">
+      <span class="font-headline-sm text-headline-sm text-primary-container leading-tight tracking-tight">
+       Saythala Microfinance
+      </span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant">
+       ສະຖາບັນການເງິນຈຸນລະພາກ
+      </span>
+     </div>
+    </div>
+    <nav class="hidden lg:flex items-center gap-spacing-lg" data-active-classes="text-secondary font-headline-sm underline decoration-2 underline-offset-8">
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="home" href="index.html">
+      ໜ້າຫຼັກ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="about-us" href="about.html">
+      ກ່ຽວກັບພວກເຮົາ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="financial-services" href="services.html">
+      ບໍລິການທາງການເງິນ
+     </a>
+     <a aria-current="page" class="transition-colors py-spacing-xs text-secondary font-headline-sm underline decoration-2 underline-offset-8" data-path="financial-literacy-hub" href="Lresource.html">
+      ຄັງຄວາມຮູ້ທາງການເງິນ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="contact-us" href="contact.html">
+      ຕິດຕໍ່ພວກເຮົາ
+     </a>
+    </nav>
+    <div class="flex items-center gap-spacing-md">
+     <a class="hidden sm:inline-flex items-center justify-center bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md px-spacing-lg py-spacing-xs rounded-lg transition-all shadow-[0_1px_3px_0_rgba(10,25,47,0.04)] hover:shadow-[0_4px_6px_-1px_rgba(10,25,47,0.06)]" data-path="consultation-booking" href="contact.html">
+      ນັດໝາຍປຶກສາ
+     </a>
+     <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+      <span class="material-symbols-outlined text-on-primary text-[18px]">
+       person
+      </span>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="w-full pt-20 flex-1 bg-surface">
+   <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-spacing-xl">
+    <div class="flex flex-col w-full">
+     <!-- Article Container -->
+     <article class="max-w-4xl mx-auto w-full flex flex-col gap-spacing-xl">
+      <!-- Navigation & Breadcrumb -->
+
+      <!-- Header & Metadata Block -->
+      <header class="space-y-4 mb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+          <span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+          <span>Financial Literacy / ການຄຸ້ມຄອງການເງິນທຸລະກິດ</span>
+        </div>
+       <h1 class="font-display-lg text-display-lg text-primary-container leading-tight tracking-tight">
+        ກູ້ຢືມຢ່າງມີຄວາມຮັບຜິດຊອບ: ວິທີປະເມີນຄວາມສາມາດໃນການຊຳລະໜີ້ທີ່ແທ້ຈິງ
+       </h1>
+       <!-- Author Byline -->
+      </header>
+      <!-- Main Visual / Photo Placeholder -->
+      <figure class="mb-12 space-y-2">
+       <div class=" w-full aspect-[9/9] rounded-2xl overflow-hidden shadow-sm bg-surface-container">
+        <img alt="ການໃຫ້ຄຳປຶກສາທາງການເງິນລະຫວ່າງເຈົ້າໜ້າທີ່ສິນເຊື່ອກັບຜູ້ປະກອບການລາຍຍ່ອຍ" class=" w-full h-full object-cover" src="img/goodorbad.jpeg"/>
+       </div>
+       
+      </figure>
+      <!-- Article Body Content -->
+      <div class="flex flex-col gap-spacing-xl font-body-lg text-body-lg text-on-surface leading-relaxed">
+       <!-- Lead Intro Paragraph -->
+       <p class="text-on-surface font-body-lg text-body-lg leading-relaxed">
+        ການກູ້ຢືມເງິນບໍ່ແມ່ນເລື່ອງໜ້າກັງວົນ ຫາກເງິນກູ້ນັ້ນນຳໄປໃຊ້ເພື່ອສ້າງລາຍໄດ້ ຕໍ່ຍອດກິດຈະການ ຫຼື ຮອງຮັບກັບຈັງຫວະສຳຄັນໃນຊີວິດຢ່າງມີແບບແຜນ ແຕ່ໃນທາງກົງກັນຂ້າມ ການຕັດສິນໃຈກູ້ຢືມໂດຍປາດສະຈາກການປະເມີນກະແສເງິນສົດຢ່າງຮອບຄອບ ອາດປ່ຽນເປັນສົ່ງທີ່ເຮັດໃຫ້ເສຍໂອກາດ ແລະ ກາຍເປັນພາລະກົດດັນໄລຍະຍາວ ກະທົບກັບຄວາມໝັ້ນຄົງຂອງຄອບຄົວ ແລະ ທຸລະກິດ
+       </p>
+       <!-- Key Accent Callout -->
+       <aside class="relative p-spacing-lg bg-surface-container-low rounded-xl shadow-sm flex items-start gap-spacing-md">
+        <div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+         <span class="material-symbols-outlined text-[24px]">
+          verified
+         </span>
+        </div>
+        <div class="flex flex-col gap-spacing-2xs">
+         <span class="font-headline-sm text-headline-sm text-secondary font-bold">
+          ເກນທອງຄຳແຫ່ງຄວາມຍືນຍົງ
+         </span>
+         <p class="font-body-md text-body-md text-on-surface-variant">
+          ຫົວໃຈສຳຄັນຂອງການກູ້ຢືມຢ່າງມີຄວາມຮັບຜິດຊອບ ຄືການກວດສອບໃຫ້ແນ່ໃຈວ່າຍອດຊຳລະໜີ້ລວມທຸກທາງໃນແຕ່ລະເດືອນ
+          <strong class="text-on-surface font-semibold">
+           ບໍ່ຄວນເກີນ 30-40% ຂອງລາຍຮັບສຸດທິປະຈຳ
+          </strong>
+          ເພື່ອໃຫ້ທ່ານຍັງມີກະແສເງິນສົດເຫຼືອສຳລັບຄ່າໃຊ້ຈ່າຍຕົວຈິງ ແລະ ເງິນສຳຮອງສຸກເສີນ
+         </p>
+        </div>
+       </aside>
+       <!-- Section 1 -->
+       <section class="flex flex-col gap-spacing-md">
+        <h2 class="font-headline-xl text-headline-xl text-primary-container">
+         1. ຄຳນວນສັດສ່ວນພາລະໜີ້ຕໍ່ລາຍໄດ້ (Debt Service Ratio - DSR)
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+         ກ່ອນຍື່ນຂໍສິນເຊື່ອຈາກສະຖາບັນການເງິນໃດໆ ສູດຄຳນວນທີ່ສຳຄັນທີ່ສຸດທີ່ຜູ້ປະກອບການ ແລະ ບຸກຄົນທົ່ວໄປຕ້ອງຮູ້ ຄືສູດວັດອັດຕາສ່ວນຄວາມສາມາດໃນການແບກຮັບໜີ້ (DSR) ເຊິ່ງຄຳນວນຈາກ:
+        </p>
+        <!-- Formula Display Card -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm flex flex-col items-center justify-center gap-spacing-xs text-center">
+         <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+          ສູດປະເມີນສັດສ່ວນພາລະໜີ້ (DSR)
+         </span>
+         <div class="font-numeric-stat text-numeric-stat text-primary-container font-bold py-spacing-xs">
+          DSR = ( ພາລະໜີ້ສິນຜ່ອນຊຳລະຕໍ່ເດືອນ ÷ ລາຍໄດ້ສຸດທິຕໍ່ເດືອນ ) × 100
+         </div>
+         <span class="font-body-sm text-body-sm text-secondary font-semibold">
+          ເປົ້າໝາຍທີ່ປອດໄພ: ໜ້ອຍກວ່າ ຫຼື ເທົ່າກັບ 35%
+         </span>
+        </div>
+        <!-- Calculation Example Breakdown -->
+        <div class="bg-surface-container-low p-spacing-lg rounded-xl shadow-sm grid grid-cols-1 md:grid-cols-3 gap-spacing-md items-center">
+         <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">
+           ລາຍໄດ້ສຸດທິຫຼັງຫັກຕົ້ນທຶນ
+          </span>
+          <span class="font-headline-md text-headline-md text-on-surface font-bold">
+           12,000,000 ກີບ/ເດືອນ
+          </span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">
+           ກຳໄລສະເລ່ຍ 6 ເດືອນ
+          </span>
+         </div>
+         <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">
+           ເພດານຄ່າງວດໜີ້ສູງສຸດ (40%)
+          </span>
+          <span class="font-headline-md text-headline-md text-error font-bold">
+           ບໍ່ເກີນ 4,800,000 ກີບ/ເດືອນ
+          </span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">
+           ລວມທຸກສັນຍາເງິນກູ້
+          </span>
+         </div>
+         <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-secondary-container">
+           ລະດັບຄ່າງວດທີ່ແນະນຳ (30%)
+          </span>
+          <span class="font-headline-md text-headline-md text-secondary font-bold">
+           3,600,000 ກີບ/ເດືອນ
+          </span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">
+           ຄ່ອງຕົວ ບໍ່ຕຶງມື ມີເງິນອອມ
+          </span>
+         </div>
+        </div>
+       </section>
+       <!-- Section 2 -->
+       <section class="flex flex-col gap-spacing-md">
+        <h2 class="font-headline-xl text-headline-xl text-primary-container">
+         2. ແຍກໃຫ້ອອກລະຫວ່າງ "ໜີ້ສ້າງລາຍໄດ້" ກັບ "ໜີ້ສິ້ນເປືອງ"
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+         ເງິນກູ້ຈະມີຄຸນຄ່າສູງສຸດ ເມື່ອກ້ອນເງິນນັ້ນສາມາດແປງເປັນຜົນຕອບແທນທີ່ສູງກວ່າຕົ້ນທຶນດອກເບ້ຍຈ່າຍ ໂປຣດພິຈາລະນາວັດຖຸປະສົງກ່ອນຕັດສິນໃຈສະເໝີ:
+        </p>
+        <!-- 2-Column Comparison Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-md pt-spacing-xs">
+         <!-- Productive Debt Card -->
+         <div class="p-spacing-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-spacing-sm">
+          <div class="flex items-center gap-spacing-xs text-secondary">
+           <span class="material-symbols-outlined text-[22px]">
+            trending_up
+           </span>
+           <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            ໜີ້ສ້າງລາຍໄດ້ (Productive Debt)
+           </h3>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+           ໜີ້ທີ່ຊ່ວຍເພີ່ມປະສິດທິພາບການເຮັດວຽກ ຂະຫຍາຍກຳລັງການຜະລິດ ຫຼື ເພີ່ມຜົນກຳໄລເຂົ້າສູ່ທຸລະກິດ
+          </p>
+          <ul class="flex flex-col gap-spacing-xs font-body-md text-body-md pt-spacing-xs">
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">
+             check_circle
+            </span>
+            <span>
+             ຊື້ເຄື່ອງຈັກ ອຸປະກອນແປຮູບ ຫຼື ຍານພາຫະນະສົ່ງຂອງ
+            </span>
+           </li>
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">
+             check_circle
+            </span>
+            <span>
+             ຊື້ສະຕັອກສິນຄ້າໃນລາຄາຂາຍສົ່ງ ເພື່ອນຳມາຈຳໜ່າຍເກງກຳໄລ
+            </span>
+           </li>
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">
+             check_circle
+            </span>
+            <span>
+             ປຸ໋ຍ ພັນພືດ ຫຼື ອຸປະກອນພັດທະນາຜົນຜະລິດກະສິກຳ
+            </span>
+           </li>
+          </ul>
+         </div>
+         <!-- Unproductive Debt Card -->
+         <div class="p-spacing-lg rounded-xl bg-error-container/30 shadow-sm flex flex-col gap-spacing-sm">
+          <div class="flex items-center gap-spacing-xs text-error">
+           <span class="material-symbols-outlined text-[22px]">
+            trending_down
+           </span>
+           <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            ໜີ້ສິ້ນເປືອງ (Unproductive Debt)
+           </h3>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+           ໜີ້ທີ່ສ້າງຄ່າໃຊ້ຈ່າຍຝ່າຍດຽວ ບໍ່ກໍ່ໃຫ້ເກີດກະແສເງິນສົດກັບຄືນມາ ແລະ ມີມູນຄ່າຫຼຸດລົງຢ່າງວ່ອງໄວ
+          </p>
+          <ul class="flex flex-col gap-spacing-xs font-body-md text-body-md pt-spacing-xs">
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">
+             cancel
+            </span>
+            <span>
+             ການຊື້ສິນຄ້າແຟຊັ່ນ ຫຼື ອຸປະກອນທີ່ເກີນຄວາມຈຳເປັນຮີບດ່ວນ
+            </span>
+           </li>
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">
+             cancel
+            </span>
+            <span>
+             ງານລ້ຽງສັງສັນ ຫຼື ຄ່າໃຊ້ຈ່າຍໃນການເຂົ້າສັງຄົມເກີນຕົວ
+            </span>
+           </li>
+           <li class="flex items-start gap-spacing-xs">
+            <span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">
+             cancel
+            </span>
+            <span>
+             ການກູ້ຢືມເງິນກ້ອນໃໝ່ ເພື່ອນຳມາຈ່າຍດອກເບ້ຍເງິນກູ້ນອກລະບົບ
+            </span>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </section>
+       <!-- Section 3 -->
+       <section class="flex flex-col gap-spacing-md">
+        <h2 class="font-headline-xl text-headline-xl text-primary-container">
+         3. ສັນຍານເຕືອນໄພ ແລະ ຂໍ້ຄວນລະວັງກ່ອນເຊັນສັນຍາ (Red Flags)
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+         ໃນຖານະຜູ້ກູ້ ທ່ານມີສິດທິເຕັມທີ່ໃນການຮັບຊາບຂໍ້ມູນທີ່ຖືກຕ້ອງ ໂປ່ງໃສ ແລະ ເປັນທຳ ກວດເຊັກລາຍການເຫຼົ່ານີ້ທຸກຄັ້ງກ່ອນຕັດສິນໃຈລົງລາຍເຊັນ:
+        </p>
+        <!-- Checklist Component -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm flex flex-col gap-spacing-md">
+         <div class="flex items-start gap-spacing-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">
+           verified_user
+          </span>
+          <div class="flex flex-col">
+           <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            ກວດສອບອັດຕາດອກເບ້ຍທີ່ແທ້ຈິງຕໍ່ປີ (Effective Rate)
+           </span>
+           <p class="font-body-md text-body-md text-on-surface-variant">
+            ສອບຖາມອັດຕາດອກເບ້ຍແບບຫຼຸດຕົ້ນຫຼຸດດອກ ຫຼື ອັດຕາດອກເບ້ຍທີ່ແທ້ຈິງສະເໝີ ເພື່ອບໍ່ໃຫ້ເຂົ້າໃຈຜິດຈາກຕົວເລກອັດຕາຄົງທີ່ລາຍເດືອນ (Flat Rate)
+           </p>
+          </div>
+         </div>
+         <div class="flex items-start gap-spacing-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">
+           calendar_month
+          </span>
+          <div class="flex flex-col">
+           <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            ຕາຕະລາງຊຳລະໜີ້ທີ່ສອດຄ່ອງກັບຮອບລາຍໄດ້
+           </span>
+           <p class="font-body-md text-body-md text-on-surface-variant">
+            ຫາກທ່ານເຮັດກະສິກຳ ຫຼື ຮັບເງິນເປັນງວດ ໃຫ້ເລືອກຮອບການຜ່ອນຊຳລະທີ່ກົງກັບລະດູການເກັບກ່ຽວ ຫຼື ຮອບເງິນເຂົ້າ ເພື່ອຫຼີກລ່ຽງການຜິດນັດຊຳລະ
+           </p>
+          </div>
+         </div>
+         <div class="flex items-start gap-spacing-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">
+           receipt_long
+          </span>
+          <div class="flex flex-col">
+           <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            ລະວັງຄ່າທຳນຽມແອບແຝງ ແລະ ເບ້ຍປັບຊັກຊ້າ
+           </span>
+           <p class="font-body-md text-body-md text-on-surface-variant">
+            ສະຖາບັນການເງິນທີ່ໄດ້ມາດຕະຖານເຊັ່ນ Saythala ຈະແຈ້ງລາຍລະອຽດຄ່າດຳເນີນການ ຕາຕະລາງຕັດເງິນຕົ້ນ-ດອກເບ້ຍຢ່າງໂປ່ງໃສ ໂດຍບໍ່ມີການຮຽກເກັບເງິນເຕີມ
+           </p>
+          </div>
+         </div>
+         <div class="flex items-start gap-spacing-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">
+           gavel
+          </span>
+          <div class="flex flex-col">
+           <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            ຫຼີກລ່ຽງເງິນກູ້ນອກລະບົບທຸກຮູບແບບ
+           </span>
+           <p class="font-body-md text-body-md text-on-surface-variant">
+            ແມ່ນວ່າຈະອະນຸມັດໄວ ແຕ່ດອກເບ້ຍທົບລາຍວັນ ແລະ ການທວງຖາມທີ່ບໍ່ເປັນທຳ ຈະທຳລາຍສະຖຽນລະພາບທາງການເງິນຂອງຄອບຄົວຢ່າງຮ້າຍແຮງ
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+       <!-- Consultation CTA Banner -->
+       <section class="bg-primary-container text-on-primary p-spacing-xl rounded-xl shadow-md flex flex-col md:flex-row items-center justify-between gap-spacing-lg">
+        <div class="flex flex-col gap-spacing-xs text-center md:text-left">
+         <span class="font-label-md text-label-md text-secondary-container font-semibold uppercase tracking-wide">
+          ບໍລິການໃຫ້ຄຳປຶກສາແບບສ່ວນຕົວ
+         </span>
+         <h3 class="font-headline-xl text-headline-xl text-on-primary font-bold">
+          ຕ້ອງການທີ່ປຶກສາປະເມີນວົງເງິນກູ້?
+         </h3>
+         <p class="font-body-md text-body-md text-surface-container max-w-xl">
+          ເຈົ້າໜ້າທີ່ສິນເຊື່ອ ສະຖາບັນການເງິນທີບໍ່ຮັບຝາກ ສາຍທາາລາ ພ້ອມຊ່ວຍວິເຄາະກະແສເງິນສົດ ແລະ ຈັດຕາຕະລາງຜ່ອນຊຳລະທີ່ເໝາະສົມກັບທ່ານ ໂດຍບໍ່ມີຄ່າໃຊ້ຈ່າຍ
+         </p>
+        </div>
+        <a class="shrink-0 inline-flex items-center gap-spacing-xs bg-secondary hover:bg-on-secondary-container text-on-secondary px-spacing-xl py-spacing-md rounded-lg font-label-md text-label-md font-semibold transition-all shadow-md hover:shadow-lg" data-path="consultation-booking" href="contact.html">
+         <span class="material-symbols-outlined text-[20px]">
+          support_agent
+         </span>
+         <span>
+          ຕິດຕໍ່ປຶກສາເຈົ້າໜ້າທີ່
+         </span>
+        </a>
+       </section>
+      </div>
+      <!-- Author Profile & Share Section -->
+      <section class="pt-spacing-lg flex flex-col gap-spacing-lg">
+       <!-- Interactive Share Bar -->
+      
+       <!-- Feedback Toast -->
+       <div class="hidden self-center bg-inverse-surface text-inverse-on-surface px-spacing-md py-spacing-xs rounded-full font-label-sm text-label-sm shadow-md transition-all" id="copy-toast">
+        ຄັດລອກລິ້ງບົດຄວາມຮຽບຮ້ອຍແລ້ວ
+       </div>
+      </section>
+      <!-- Related Articles Grid -->
+      <section class="flex flex-col gap-spacing-lg pt-spacing-xl">
+       <div class="flex items-center justify-between">
+        <h3 class="font-headline-xl text-headline-xl text-primary-container font-bold">
+         ບົດຄວາມທີ່ທ່ານອາດສົນໃຈ
+        </h3>
+        <a class="inline-flex items-center gap-spacing-2xs font-label-md text-label-md text-secondary hover:text-on-secondary-container transition-colors font-semibold" data-path="financial-literacy-hub" href="Lresource.html">
+         <span>
+          ເບິ່ງຄັງຄວາມຮູ້ທັງໝົດ
+         </span>
+         <span class="material-symbols-outlined text-[18px]">
+          arrow_forward
+         </span>
+        </a>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-spacing-lg">
+        <!-- Related Card 1 -->
+        <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col p-spacing-lg gap-spacing-md group">
+         <div class="flex items-center justify-between">
+          <span class="inline-flex items-center px-spacing-sm py-spacing-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+           ການບໍລິຫານເງິນ
+          </span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">
+           ອ່ານ 5 ນາທີ
+          </span>
+         </div>
+         <h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors font-bold">
+          ບັນຊີ 101: ເປັນຫຍັງຕ້ອງແຍກກະເປົາເງິນສ່ວນຕົວອອກຈາກເງິນທຸລະກິດ?
+         </h4>
+         <p class="font-body-md text-body-md text-on-surface-variant flex-1 line-clamp-2">
+          ເຕັກນິກການເຮັດບັນຊີລາຍຮັບລາຍຈ່າຍສະບັບເຂົ້າໃຈງ່າຍ ປ້ອງກັນບັນຫາກະແສເງິນສົດຕິດຂັດ ແລະ ເຫັນຜົນກຳໄລສຸດທິຂອງຮ້ານຄ້າໄດ້ຢ່າງຊັດເຈນ
+         </p>
+         <div class="pt-spacing-xs flex items-center justify-between">
+          <span class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold group-hover:underline">
+           <span>
+            ອ່ານບົດຄວາມ
+           </span>
+           <span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">
+            arrow_forward
+           </span>
+          </span>
+          <span class="font-body-sm text-body-sm text-outline-variant">
+           14 ກ.ຍ. 2026
+          </span>
+         </div>
+        </article>
+        <!-- Related Card 2 -->
+        <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col p-spacing-lg gap-spacing-md group">
+         <div class="flex items-center justify-between">
+          <span class="inline-flex items-center px-spacing-sm py-spacing-2xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+           ການແກ້ໄຂໜີ້
+          </span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">
+           ອ່ານ 6 ນາທີ
+          </span>
+         </div>
+         <h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors font-bold">
+          ໝູນເງິນບໍ່ທັນເຮັດແນວໃດ? 3 ຂັ້ນຕອນຈັດການໜີ້ເມື່ອສະດຸດ
+         </h4>
+         <p class="font-body-md text-body-md text-on-surface-variant flex-1 line-clamp-2">
+          ແນວທາງການເຈລະຈາກັບເຈົ້າໜີ້ຢ່າງຖືກວິທີ ການປັບໂຄງສ້າງງວດຜ່ອນ ແລະ ການວາງແຜນຫຼຸດລາຍຈ່າຍທີ່ບໍ່ຈຳເປັນໃນຍາມສຸກເສີນ
+         </p>
+         <div class="pt-spacing-xs flex items-center justify-between">
+          <span class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-semibold group-hover:underline">
+           <span>
+            ອ່ານບົດຄວາມ
+           </span>
+           <span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">
+            arrow_forward
+           </span>
+          </span>
+          <span class="font-body-sm text-body-sm text-outline-variant">
+           08 ກ.ຍ. 2026
+          </span>
+         </div>
+        </article>
+       </div>
+      </section>
+     </article>
+    </div>
+   </div>
+  </main>
+  <!-- Footer -->
+<footer class="w-full bg-primary-container text-on-surface-variant pt-spacing-3xl pb-spacing-xl border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-spacing-xl pb-spacing-2xl border-b border-outline-variant/15">
+        <div class="lg:col-span-4 flex flex-col gap-spacing-md">
+          <div class="flex items-center gap-spacing-sm">
+            <span class="font-headline-md text-headline-md text-surface-bright tracking-tight">ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບຝາກ ສາຍທາລາ</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">ສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ຊຸມຊົນ ແລະ ຜູ້ປະກອບການຂະໜາດນ້ອຍ ຜ່ານສິນເຊື່ອທີ່ເຂົ້າເຖິງງ່າຍ, ໂປ່ງໃສ, ບໍ່ຮັບເງິນຝາກ.</p>
+          <div class="bg-surface-variant/10 rounded-lg p-spacing-sm border border-outline-variant/20 max-w-sm">
+            <div class="flex items-center gap-spacing-xs text-secondary-fixed mb-spacing-2xs">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span class="font-label-sm text-label-sm tracking-wide font-semibold">ສະຖາບັນທີ່ໄດ້ຮັບອະນຸຍາດຖືກຕ້ອງ</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-primary-container">ໄດ້ຮັບອະນຸຍາດເປັນສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ ພາຍໃຕ້ການກຳກັບດູແລຂອງທະນາຄານແຫ່ງ ສປປ ລາວ.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ໜ້າຫຼັກ</span>
+          <ul class="flex flex-col gap-spacing-xs">
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="home" href="index.html">ໜ້າຫຼັກ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="about-us" href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-services" href="services.html">ບໍລິການສິນເຊຶ່ອ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-literacy" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="contact-us" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ສຳນັກງານໃຫຍ່ &amp; ຂໍ້ມູນຕິດຕໍ່</span>
+          <div class="flex flex-col gap-spacing-xs font-body-md text-body-md text-on-primary-container">
+            <p class="text-on-primary-container">ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ໂທ:</span> +856 20 54 223 333 , 020 52 413 333 / WhatsApp: +856 20 59 553 333</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ອີເມວ:</span> saythala.microfinance@gmail.com</p>
+            <div class="pt-spacing-2xs border-t border-outline-variant/15 mt-spacing-2xs">
+              <span class="font-label-sm text-label-sm text-surface-bright block">ໂມງລັດຖະການ</span>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ຈັນ - ສຸກ: 08:30 - 17:00</p>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ເສົາ - ອາທິດ: ປິດ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-spacing-lg flex flex-col sm:flex-row items-center justify-between gap-spacing-md">
+        <p class="font-body-sm text-body-sm text-on-primary-container">© 2025 ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບເງິນຝາກ ສາຍທາລາ . ສະຫງວນລິຂະສິດ.</p>
+        <div class="flex items-center gap-spacing-md font-body-sm text-body-sm text-on-primary-container">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer="" src="js/main.js"></script>
+  </script>
+ </body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="lo">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Saythala Microfinance</title>
+  <meta content="web_standard" name="shell-type"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+    <script src="TW/tailwind-config.js">
+    </script>
+    <link href="cs/style.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between">
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+   <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter">
+    <div class="flex items-center gap-spacing-md shrink-0">
+     <img alt="Saythala Microfinance" class="h-8 w-auto object-contain" src="img/logo.png"/>
+     <div class="flex flex-col">
+      <span class="font-headline-sm text-headline-sm text-primary-container leading-tight tracking-tight">
+       Saythala Microfinance
+      </span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant">
+       ສະຖາບັນການເງິນຈຸນລະພາກ
+      </span>
+     </div>
+    </div>
+    <nav class="hidden lg:flex items-center gap-spacing-lg" data-active-classes="text-secondary font-headline-sm underline decoration-2 underline-offset-8">
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="home" href="index.html">
+      ໜ້າຫຼັກ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="about-us" href="about.html">
+      ກ່ຽວກັບພວກເຮົາ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="financial-services" href="services.html">
+      ບໍລິການສິນເຊື່ອ
+     </a>
+     <a class="font-label-md text-label-md text-secondary font-semibold hover:text-on-surface transition-colors py-spacing-xs" data-path="financial-literacy-hub" href="Lresource.html">
+      ຄັງຄວາມຮູ້ທາງການເງິນ
+     </a>
+     <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-spacing-xs" data-path="contact-us" href="contact.html">
+      ຕິດຕໍ່ພວກເຮົາ
+     </a>
+    </nav>
+    <div class="flex items-center gap-spacing-md">
+     <a class="hidden sm:inline-flex items-center justify-center bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md px-spacing-lg py-spacing-xs rounded-lg transition-all shadow-[0_1px_3px_0_rgba(10,25,47,0.04)] hover:shadow-[0_4px_6px_-1px_rgba(10,25,47,0.06)]" data-path="consultation-booking" href="contact.html">
+      ນັດໝາຍປຶກສາ
+     </a>
+     <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+      <span class="material-symbols-outlined text-on-primary text-[18px]">
+       person
+      </span>
+     </div>
+    </div>
+   </div>
+  </header>
+  <!-- Main article content -->
+  <main class="w-full pt-20 flex-1 bg-surface">
+   <div class="flex flex-col w-full">
+    <!-- Article Main Container -->
+    <article class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-spacing-xl" id="article-content">
+     <!-- Top Bar Navigation & Breadcrumbs -->
+     <div class="flex flex-col md:flex-row md:items-center justify-between gap-spacing-md mb-spacing-lg">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-spacing-xs font-label-md text-label-md text-on-surface-variant flex-wrap">
+       <a class="hover:text-primary-container transition-colors flex items-center gap-1" href="index.html">
+        <span class="material-symbols-outlined text-[18px]">
+         home
+        </span>
+        <span>
+         ໜ້າຫຼັກ
+        </span>
+       </a>
+       <span>
+        /
+       </span>
+       <a class="hover:text-primary-container transition-colors" href="Lresource.html">
+        ຄັງຄວາມຮູ້ທາງການເງິນ
+       </a>
+       <span>
+        /
+       </span>
+       <span class="text-primary-container font-semibold">
+        ບັນຊີ 101
+       </span>
+      </nav>
+      <a class="inline-flex items-center gap-spacing-xs text-secondary hover:text-on-secondary-container font-label-md text-label-md group transition-all w-fit" href="Lresource.html">
+       <span class="material-symbols-outlined transition-transform group-hover:-translate-x-1 text-[20px]">
+        arrow_back
+       </span>
+       <span>
+        &larr; ກັບໄປຄັງຄວາມຮູ້ທາງການເງິນ
+       </span>
+      </a>
+     </div>
+     <!-- Article Header Layout -->
+     <header class="max-w-4xl mx-auto mb-spacing-xl">
+      <div class="inline-flex items-center gap-spacing-xs bg-secondary-fixed/40 text-on-secondary-container px-spacing-sm py-spacing-2xs rounded-full font-label-sm text-label-sm mb-spacing-md">
+       <span class="material-symbols-outlined text-[16px]">
+        menu_book
+       </span>
+       <span>
+        ຄັງຄວາມຮູ້ທາງການເງິນ / ບັນຊີ 101
+       </span>
+      </div>
+      <h1 class="font-headline-xl text-headline-xl text-on-surface mb-spacing-md leading-tight">
+       ບັນຊີ 101: ເຄັດລັບການແຍກເງິນສ່ວນຕົວອອກຈາກເງິນທຸລະກິດ
+      </h1>
+      <div class="flex flex-wrap items-center justify-between gap-spacing-md pt-spacing-sm shadow-[0_1px_0_rgba(197,198,205,0.4)] pb-spacing-md">
+       <div class="flex items-center gap-spacing-md">
+        <div class="w-11 h-11 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+         <span class="material-symbols-outlined text-[24px]">
+          verified_user
+         </span>
+        </div>
+        <div class="flex flex-col">
+         <span class="font-label-md text-label-md text-on-surface font-bold">
+          ທີມທີ່ປຶກສາການເງິນ ສະຖາບັນການເງິນຈຸນລະພາກ ເຊຊາລາ
+         </span>
+         <div class="flex items-center gap-spacing-sm font-body-sm text-body-sm text-on-surface-variant">
+          <span>
+           24 ກັນຍາ 2026
+          </span>
+          <span>
+           &bull;
+          </span>
+          <span class="inline-flex items-center gap-1">
+           <span class="material-symbols-outlined text-[14px]">
+            schedule
+           </span>
+           ອ່ານ 5 ນາທີ
+          </span>
+         </div>
+        </div>
+       </div>
+       <!-- Social Action Buttons -->
+       <div class="flex items-center gap-spacing-xs" id="share-buttons">
+        <button aria-label="Share on Facebook" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" type="button">
+         <span class="material-symbols-outlined text-[18px]">
+          share
+         </span>
+        </button>
+        <button aria-label="Share on WhatsApp" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all" type="button">
+         <span class="material-symbols-outlined text-[18px]">
+          chat
+         </span>
+        </button>
+        <button aria-label="Copy Link" class="inline-flex items-center gap-spacing-xs px-spacing-sm h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" data-action="copy-article-link" id="btn-copy-link" type="button">
+         <span class="material-symbols-outlined text-[16px]">
+          link
+         </span>
+         <span id="copy-text">
+          ຄັດລອກລິ້ງ
+         </span>
+        </button>
+       </div>
+      </div>
+     </header>
+     <!-- Featured Hero Image Section -->
+     <div class="max-w-4xl mx-auto mb-spacing-2xl">
+      <div class="overflow-hidden rounded-xl bg-surface-container shadow-md">
+       <img alt="SME entrepreneur managing accounting records with tablet in coffee shop" class="w-full h-auto max-h-[520px] object-cover" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQr0SxHIOGwaBvxpuV2DfbGL8AUprifZF1bP12DKptKTr4IztUVjIo-dyyJkrun9B9NgiV97tXzRNjPezY1pxXRUIKvGykRN8tsEY9PgxgjCsFMUEtKC2j21U6SYF7djgRsIbKvVia2McBjwBdtXKjxerT4cIzI-PNPNTW8Yy546iMEgbF3BgskGHcf4Z9-3r9BJ9XmD3e2rg4mEhRmIzrO6jinZVhOfEFDbbzzz3SFUCAElRhC9BInA"/>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-spacing-xs italic">
+       ການເຮັດບັນຊີ ແລະ ການແຍກກະເປົາເງິນສ່ວນຕົວຢ່າງເປັນລະບົບ ຄືຫົວໃຈສຳຄັນສູ່ຄວາມຍືນຍົງຂອງທຸລະກິດຂະໜາດຍ່ອຍ
+      </p>
+     </div>
+     <!-- Editorial Reading Text Container -->
+     <div class="max-w-3xl mx-auto">
+      <!-- Introduction Section -->
+      <section class="mb-spacing-xl">
+       <p class="font-body-lg text-body-lg text-on-surface leading-[1.8] mb-spacing-md">
+        ຜູ້ປະກອບການລາຍຍ່ອຍ (Micro-entrepreneurs) ແລະ ເຈົ້າຂອງທຸລະກິດ SME ຈຳນວນບໍ່ໜ້ອຍ ປະສົບກັບບັນຫາຂາດສະພາບຄ່ອງທາງການເງິນ ທັງໆທີ່ຍອດຂາຍສິນຄ້າໄປໄດ້ດີ ແລະ ມີລູກຄ້າອຸດໜູນຢ່າງຕໍ່ເນື່ອງ ໃນຄວາມເປັນຈິງ ບັນຫາຫຼັກບໍ່ໄດ້ເກີດຈາກຍອດຂາຍ ແຕ່ເກີດຈາກ
+        <strong class="font-semibold text-primary-container">
+         "ການບໍ່ແຍກກະເປົາເງິນສ່ວນຕົວກັບກະເປົາເງິນທຸລະກິດ"
+        </strong>
+        ລະຫວ່າງຄ່າໃຊ້ຈ່າຍໃນຄອບຄົວປົນເປກັບເງິນໝູນວຽນຂອງກິດຈະການ.
+       </p>
+       <p class="font-body-lg text-body-lg text-on-surface leading-[1.8]">
+        ເມື່ອເງິນສົດຈາກການຂາຍປົນເປກັບເງິນສ່ວນຕົວ ລາຍຈ່າຍປະຈຳວັນເລັກໆນ້ອຍໆ ກໍເລີ່ມກິນກຳໄລໂດຍບໍ່ຮູ້ຕົວ ຈົນເຖິງວັນທີ່ຕ້ອງຊື້ວັດຖຸດິບ ຫຼື ຈ່າຍຄ່າເຊົ່າຮ້ານ ກໍພົບວ່າຍອດເງິນສົດບໍ່ພຽງພໍ ແລະ ກາຍເປັນຈຸດເລີ່ມຕົ້ນຂອງວົງຈອນໜີ້ທີ່ບໍ່ຈຳເປັນ.
+       </p>
+       <!-- Callout Box -->
+       <div class="bg-surface-container-low rounded-r-xl p-spacing-lg my-spacing-lg shadow-[inset_4px_0_0_#006c4a]">
+        <div class="flex items-start gap-spacing-md">
+         <span class="material-symbols-outlined text-secondary text-[28px] shrink-0">
+          lightbulb
+         </span>
+         <div>
+          <h2 class="font-headline-sm text-headline-sm text-primary-container mb-spacing-2xs">
+           ກັບດັກທາງການເງິນທີ່ພົບບ່ອຍທີ່ສຸດ
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+           ການຢືບເງິນສົດຈາກລີ້ນຊັກຮ້ານໄປໃຊ້ສ່ວນຕົວຕາມຄວາມເຄີຍຊິນ ເຮັດໃຫ້ເຈົ້າຂອງທຸລະກິດເຂົ້າໃຈຜິດວ່າຮ້ານມີກຳໄລ ເພາະເຫັນເງິນສົດເຂົ້າ-ອອກຕະຫຼອດເວລາ ແຕ່ໃນຄວາມເປັນຈິງ ອາດກຳລັງກິນທຶນ ແລະ ທຳລາຍສະພາບຄ່ອງຂອງກິດຈະການໂດຍບໍ່ຮູ້ຕົວ.
+          </p>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- Section: 5 Actionable Tips -->
+      <!-- 5 rules / money separation -->
+      <section class="mb-spacing-2xl" id="money-separation-rules">
+       <div class="flex items-center gap-spacing-xs mb-spacing-lg">
+        <span class="w-2 h-6 bg-secondary rounded-full">
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-primary-container">
+         5 ກົດເຫຼັກແຍກກະເປົາເງິນໃຫ້ເດັດຂາດ
+        </h2>
+       </div>
+       <div class="space-y-spacing-md">
+        <!-- Step 1 -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+         <div class="flex items-start gap-spacing-md">
+          <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+           1
+          </div>
+          <div class="flex-1">
+           <div class="flex items-center gap-spacing-xs mb-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px]">
+             account_balance
+            </span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+             ເປີດບັນຊີທະນາຄານແຍກຕ່າງຫາກ (Separate Bank Accounts)
+            </h3>
+           </div>
+           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            ເປີດບັນຊີສຳລັບທຸລະກິດຢ່າງໜ້ອຍ 1 ບັນຊີ ເພື່ອຮັບເງິນໂອນຈາກລູກຄ້າ ແລະ ຈ່າຍຄ່າໃຊ້ຈ່າຍທີ່ກ່ຽວຂ້ອງກັບຮ້ານເທົ່ານັ້ນ. ຫ້າມໂອນເງິນຄ່າໃຊ້ຈ່າຍສ່ວນຕົວ ເຊັ່ນ: ຄ່າຜ່ອນບ້ານ, ຄ່າໄຟຟ້າບ້ານ ອອກຈາກບັນຊີນີ້ໂດຍກົງ.
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+         <div class="flex items-start gap-spacing-md">
+          <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+           2
+          </div>
+          <div class="flex-1">
+           <div class="flex items-center gap-spacing-xs mb-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px]">
+             payments
+            </span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+             ກຳນົດເງິນເດືອນໃຫ້ຕົນເອງ (Set a Fixed Personal Salary)
+            </h3>
+           </div>
+           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            ປະຕິບັດຕໍ່ຕົນເອງຄືພະນັກງານຂອງຮ້ານ ໂດຍໂອນເງິນເດືອນຈາກບັນຊີທຸລະກິດເຂົ້າບັນຊີສ່ວນຕົວເປັນປະຈຳ ເດືອນລະ 1 ຫຼື 2 ຄັ້ງ ຕາມຮອບທີ່ກຳນົດ. ຫາກເດືອນໃດມີກຳໄລສູງ ໃຫ້ເກັບເປັນກຳໄລສະສົມຂອງຮ້ານ ບໍ່ຄວນເພີ່ມເງິນເດືອນຊົ່ວຄາວຕາມໃຈມັກ.
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+         <div class="flex items-start gap-spacing-md">
+          <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+           3
+          </div>
+          <div class="flex-1">
+           <div class="flex items-center gap-spacing-xs mb-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px]">
+             edit_note
+            </span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+             ບັນທຶກລາຍຮັບ-ລາຍຈ່າຍທຸລະກິດຢ່າງເຂັ້ມງວດ (Track Bookkeeping)
+            </h3>
+           </div>
+           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            ຈົດບັນທຶກລາຍລະອຽດຕົ້ນທຶນທຸກຢ່າງໃນແຕ່ລະວັນ ປັດຈຸບັນສາມາດໃຊ້ແອັບພລິເຄຊັນບັນຊີງ່າຍໆ ຫຼື ປຶ້ມບັນຊີລາຍຮັບ-ລາຍຈ່າຍ. ການບັນທຶກທຸກວັນຊ່ວຍໃຫ້ເຫັນຕົ້ນທຶນແຝງ ເຊັ່ນ: ຄ່າສູນເສຍຂອງສິນຄ້າ ຫຼື ຄ່າທຳນຽມແອັບຕ່າງໆ.
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+         <div class="flex items-start gap-spacing-md">
+          <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+           4
+          </div>
+          <div class="flex-1">
+           <div class="flex items-center gap-spacing-xs mb-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px]">
+             credit_card
+            </span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+             ບໍ່ໃຊ້ບັດ ຫຼື ກະເປົາເງິນສັບປົນກັນ (Avoid Blending Payments)
+            </h3>
+           </div>
+           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            ແຍກກະເປົາເງິນສົດໜ້າຮ້ານກັບເງິນສ່ວນຕົວໃຫ້ຊັດເຈນ. ຫາກມີຄວາມຈຳເປັນຕ້ອງໃຊ້ເງິນສ່ວນຕົວອອກຄ່າສິນຄ້າແທນຮ້ານ ຕ້ອງເຮັດໃບເບີກເງິນຄືນທັນທີໃນວັນດຽວກັນ ເພື່ອໃຫ້ເອກະສານບັນຊີກົງກັບຄວາມເປັນຈິງ.
+           </p>
+          </div>
+         </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="bg-surface-container-lowest p-spacing-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+         <div class="flex items-start gap-spacing-md">
+          <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container font-headline-sm text-headline-sm flex items-center justify-center shrink-0">
+           5
+          </div>
+          <div class="flex-1">
+           <div class="flex items-center gap-spacing-xs mb-spacing-xs">
+            <span class="material-symbols-outlined text-secondary text-[20px]">
+             savings
+            </span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+             ສຳຮອງເງິນສຸກເສີນແຍກ 2 ກ້ອນ (Separate Emergency Funds)
+            </h3>
+           </div>
+           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            ກຽມ
+            <span class="font-semibold text-primary-container">
+             ເງິນສຳຮອງຄອບຄົວ 3-6 ເດືອນ
+            </span>
+            ສຳລັບຄ່າໃຊ້ຈ່າຍໃນຊີວິດປະຈຳວັນ ແລະ
+            <span class="font-semibold text-secondary">
+             ເງິນທຶນໝູນວຽນສຸກເສີນ 1-3 ເດືອນ
+            </span>
+            ເພື່ອຮອງຮັບຊ່ວງລະດູການຂາຍຕົກຕ່ຳ ຫຼື ເຄື່ອງຈັກຕ່າງໆຊຳລຸດ.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <!-- Section: Interactive Financial Tool & Calculator -->
+      <!-- Salary calculator + financial checklist -->
+     
+      <!-- Trust Callout Quote -->
+      <section class="my-spacing-2xl">
+       <blockquote class="bg-surface-container-low p-spacing-xl rounded-xl text-center relative overflow-hidden shadow-sm">
+        <span class="material-symbols-outlined text-[64px] text-surface-container-high absolute -top-2 left-6 select-none opacity-40">
+         format_quote
+        </span>
+        <p class="font-headline-md text-headline-md text-primary-container italic font-medium leading-relaxed relative z-10">
+         "ກຳໄລທີ່ແທ້ຈິງ ບໍ່ໄດ້ວັດຈາກຍອດເງິນສະສົມໃນບັນຊີລວມ ແຕ່ວັດຈາກຄວາມສາມາດໃນການຈ່າຍເງິນເດືອນໃຫ້ຕົນເອງໄດ້ຢ່າງສະໝ່ຳສະເໝີ ແລະ ທຸລະກິດຍັງຄົງເຕີບໂຕໄປໄດ້ຢ່າງໝັ້ນຄົງ"
+        </p>
+        <cite class="block font-label-md text-label-md text-on-surface-variant not-italic mt-spacing-md">
+         &mdash; ຫຼັກການຄຸ້ມຄອງການເງິນຈາກ ເຊຊາລາ ໄມໂຄຣໄຟແນນສ໌
+        </cite>
+       </blockquote>
+      </section>
+      <!-- Author Profile Card -->
+      
+     </div>
+     <!-- CTA Consultation Banner (Institutional Deep Navy) -->
+     <!-- Consultation CTA -->
+     <!-- Related Articles Grid (3 Cards) -->
+     <!-- Related articles -->
+     <section class="max-w-4xl mx-auto mb-spacing-xl" id="related-articles">
+      <div class="flex items-center justify-between mb-spacing-lg">
+       <div>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">
+         ເນື້ອຫາທີ່ທ່ານອາດສົນໃຈ
+        </span>
+        <h2 class="font-headline-xl text-headline-xl text-primary-container">
+         ບົດຄວາມການເງິນທີ່ກ່ຽວຂ້ອງ
+        </h2>
+       </div>
+       <a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="Lresource.html">
+        <span>
+         ເບິ່ງບົດຄວາມທັງໝົດ
+        </span>
+        <span class="material-symbols-outlined text-[16px]">
+         chevron_right
+        </span>
+       </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-spacing-lg">
+       <!-- Related Card 1 -->
+       <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+        <div class="h-44 bg-surface-container overflow-hidden">
+         <img alt="ກູ້ຢືມຢ່າງມີຄວາມຮັບຜິດຊອບ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Microfinance loan officer sitting with a small local grocery store owner in Southeast Asia, reviewing loan repayment schedules with friendly smiles in bright morning natural light." decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW5q3YadiC1CoP8Bb4mk3FqVGEu-fyeXAyPmI8dtRCvuLYrfWWKBDJulZXfHCY90rPYWNDSDEiY00gaJV_LjesOBzWG7lDne4w7bFZHTfQm_OxM5NuouLZtzOKhypksmMpCA8CP63DT0bqFA9HRP6fszXl6rHlSxAex_lqMuxGEBK3HuA82GmDvsyO6IWD_oofIiBNhl1WISVc67vDhxKeXulcCroAd3989aKUAB_ZVdoHaw0ysbhDsg"/>
+        </div>
+        <div class="p-spacing-md flex-1 flex flex-col justify-between">
+         <div>
+          <div class="flex items-center gap-spacing-xs font-label-sm text-label-sm text-on-surface-variant mb-spacing-2xs">
+           <span class="text-secondary font-semibold">
+            ຂໍ້ຄິດການກູ້ຢືມ
+           </span>
+           <span>
+            &bull;
+           </span>
+           <span>
+            ອ່ານ 4 ນາທີ
+           </span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+           ກູ້ຢືມຢ່າງມີຄວາມຮັບຜິດຊອບ: ວິທີປະເມີນຄວາມສາມາດໃນການຊຳລະໜີ້ທີ່ແທ້ຈິງ
+          </h3>
+         </div>
+         <a class="mt-spacing-md inline-flex items-center gap-1 font-label-md text-label-md text-primary-container font-semibold group-hover:text-secondary" href="responsible-borrowing.html">
+          <span>
+           ອ່ານບົດຄວາມ
+          </span>
+          <span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">
+           arrow_forward
+          </span>
+         </a>
+        </div>
+       </article>
+       <!-- Related Card 2 -->
+       <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+        <div class="h-44 bg-surface-container overflow-hidden">
+         <img alt="ຂໍ້ຄວນລະວັງກ່ຽວກັບການກູ້ຢືມ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="A smartphone showing online financial alerts and scam warning indicators on an organized wooden desk with notebook and reading glasses in a serene office context." decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO16eMkzBaSve4_MLeR2gkU9aN8XMRCf0khTV3CjDQYNDWToSJECs6rmiyPVqBqe7pyJOtpFOp3kkmbnCYNiyMsyvmrEGoOS95H1U0sVqiyORsJ5qllhs66CP5ctMOmKWDWz0Xqxwr7HLQcwfMgBIbAN-BE6LWuPAAJdK_eBMs3s7F8N4PDOMuaBa95DIFkRtc2Vqizbv2INVdawphkNaJCe_d15A5Fxdw7LgR6rMvwEkily0B8EIpjg"/>
+        </div>
+        <div class="p-spacing-md flex-1 flex flex-col justify-between">
+         <div>
+          <div class="flex items-center gap-spacing-xs font-label-sm text-label-sm text-on-surface-variant mb-spacing-2xs">
+           <span class="text-error font-semibold">
+            ໄພທາງການເງິນ
+           </span>
+           <span>
+            &bull;
+           </span>
+           <span>
+            ອ່ານ 5 ນາທີ
+           </span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+           ຮູ້ທັນກົນໂກງ: ສັງເກດແນວໃດວ່ານີ້ຄືມິດສາຊີບ ຫຼື ເງິນກູ້ນອກລະບົບ
+          </h3>
+         </div>
+         <span class="mt-spacing-md inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+          <span>
+           ກຳລັງຈັດທຳ
+          </span>
+         </span>
+        </div>
+       </article>
+       <!-- Related Card 3 -->
+       <article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+        <div class="h-44 bg-surface-container overflow-hidden">
+         <img alt="ການຈັດການສະຕັອກສິນຄ້າ" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="An organized retail artisan boutique warehouse shelf with neatly arranged boxed products and an inventory clipboard indicating systematic cash flow control." decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf2vJ3BCaT2sETClOVnLPSdfukE-QgbX_ybIP4Ypy1xZUAml05LHa2_rXExJUVg5AYNYYvfXX4lCbVKS9Ai2SbdywZPY_Ibokl_lkbq-g_DVNmumPhJHHzj9wNc7mJ0ykHoStN4BDci8FgXzesKYz01N2Fy1hNAFutIPaRCl3OhKPSiVKfbTVeVoFj3TMt3s5Y3RtvohFmj9Q9zNrxqAD6H3PFAHHsKB5I1uJ5YQkYUcu6RhiEPvfnbA"/>
+        </div>
+        <div class="p-spacing-md flex-1 flex flex-col justify-between">
+         <div>
+          <div class="flex items-center gap-spacing-xs font-label-sm text-label-sm text-on-surface-variant mb-spacing-2xs">
+           <span class="text-secondary font-semibold">
+            ການຈັດການທຸລະກິດ
+           </span>
+           <span>
+            &bull;
+           </span>
+           <span>
+            ອ່ານ 6 ນາທີ
+           </span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors line-clamp-2 leading-snug">
+           ເປັນຫຍັງການມີກອງທຶນສຳຮອງຈຶ່ງສຳຄັນກັບເຈົ້າຂອງທຸລະກິດ?
+          </h3>
+         </div>
+         <span class="mt-spacing-md inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+          <span>
+           ກຳລັງຈັດທຳ
+          </span>
+         </span>
+        </div>
+       </article>
+      </div>
+     </section>
+    </article>
+    <!-- Interactive Client-side Script -->
+   </div>
+  </main>
+  <!-- Footer -->
+   <footer class="w-full bg-primary-container text-on-surface-variant pt-spacing-3xl pb-spacing-xl border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-spacing-xl pb-spacing-2xl border-b border-outline-variant/15">
+        <div class="lg:col-span-4 flex flex-col gap-spacing-md">
+          <div class="flex items-center gap-spacing-sm">
+            <span class="font-headline-md text-headline-md text-surface-bright tracking-tight">ສະຖາບັນການເງິນຈຸນລະພາກ ສາຍທາລາ</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">ສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ຊຸມຊົນ ແລະ ຜູ້ປະກອບການຂະໜາດນ້ອຍ ຜ່ານສິນເຊື່ອທີ່ເຂົ້າເຖິງງ່າຍ, ໂປ່ງໃສ, ບໍ່ຮັບເງິນຝາກ.</p>
+          <div class="bg-surface-variant/10 rounded-lg p-spacing-sm border border-outline-variant/20 max-w-sm">
+            <div class="flex items-center gap-spacing-xs text-secondary-fixed mb-spacing-2xs">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span class="font-label-sm text-label-sm tracking-wide font-semibold">ສະຖາບັນທີ່ໄດ້ຮັບອະນຸຍາດຖືກຕ້ອງ</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-primary-container">ໄດ້ຮັບອະນຸຍາດເປັນສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ ພາຍໃຕ້ການກຳກັບດູແລຂອງທະນາຄານແຫ່ງ ສປປ ລາວ.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ລິ້ງດ່ວນ</span>
+          <ul class="flex flex-col gap-spacing-xs">
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="home" href="#">ໜ້າຫຼັກ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="about-us" href="#">ກ່ຽວກັບພວກເຮົາ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-services" href="#">ບໍລິການທາງການເງິນ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-literacy" href="#">ຄັງຄວາມຮູ້ທາງການເງິນ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="contact-us" href="#">ຕິດຕໍ່ພວກເຮົາ</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ສຳນັກງານໃຫຍ່ &amp; ຂໍ້ມູນຕິດຕໍ່</span>
+          <div class="flex flex-col gap-spacing-xs font-body-md text-body-md text-on-primary-container">
+            <p class="text-on-primary-container">ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ໂທ:</span> +856 20 54 223 333 , 020 52 413 333/ WhatsApp: +856 20 59 553 333</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ອີເມວ:</span> saythala.microfinance@gmail.com</p>
+            <div class="pt-spacing-2xs border-t border-outline-variant/15 mt-spacing-2xs">
+              <span class="font-label-sm text-label-sm text-surface-bright block">ໂມງລັດຖະການ</span>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ຈັນ - ສຸກ: 08:30 - 17:00</p>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ເສົາ - ອາທິດ: ປິດ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-spacing-lg flex flex-col sm:flex-row items-center justify-between gap-spacing-md">
+        <p class="font-body-sm text-body-sm text-on-primary-container">© 2025 ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບຝາກ ສາຍທາລາ (ບໍ່ຮັບເງິນຝາກ). ສະຫງວນລິຂະສິດ.</p>
+        <div class="flex items-center gap-spacing-md font-body-sm text-body-sm text-on-primary-container">
+          <a class="hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</a>
+          <span class="text-outline-variant">•</span>
+          <a class="hover:text-surface-bright transition-colors" data-path="client-protection" href="#">ມາດຕະຖານການປົກປ້ອງລູກຄ້າ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script defer="True" src="js/main.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="lo">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Saythala Microfinance</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Lao:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cs/style.css"/>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="TW/tailwind-config.js"></script>
+
+    <!-- External JS Config & Scripts -->
+    <script src="js/contect.js" defer></script>
+  </head>
+  <body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_3px_0_rgba(10,25,47,0.04)]">
+      <div class="h-20 max-w-[1280px] mx-auto px-margin-desktop flex items-center justify-between gap-spacing-md">
+        <div class="flex items-center gap-spacing-md">
+          <img alt="Saythala Microfinance Logo" class="h-8 w-auto object-contain" src="img/logo.png"/>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Saythala</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider mt-spacing-2xs">ສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ</span>
+          </div>
+        </div>
+        <nav class="hidden lg:flex items-center gap-spacing-lg h-full" data-active-classes="text-secondary border-b-2 border-secondary font-headline-sm">
+          <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">ໜ້າຫຼັກ</a>
+          <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="about.html">ກ່ຽວກັບພວກເຮົາ</a>
+          <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="financial-services" href="services.html">ບໍລິການສິນເຊີ່ອ</a>
+          <a class="h-full flex items-center px-spacing-2xs border-b-2 border-transparent font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="financial-literacy" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a>
+          <a aria-current="page" class="h-full flex items-center px-spacing-2xs transition-colors text-secondary border-b-2 border-secondary font-headline-sm" data-path="contact-us" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a>
+        </nav>
+        <div class="flex items-center gap-spacing-md">
+          <a class="hidden sm:inline-flex items-center justify-center bg-dark hover:bg-on-dark-container text-on-dark font-label-md text-label-md px-spacing-lg py-spacing-xs rounded-lg shadow-sm transition-all focus:outline-none" data-path="contact-us" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a>
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full pt-20 bg-surface min-h-screen">
+      <div class="flex flex-col w-full">
+        
+        <!-- Notification Banner -->
+        <section class="w-full bg-surface-container-high py-spacing-xs px-margin-desktop">
+          <div class="max-w-[1280px] mx-auto flex items-center justify-between gap-spacing-md flex-wrap">
+            <div class="flex items-center gap-spacing-xs text-on-surface">
+              <span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+              <span class="font-label-sm text-label-sm tracking-wide">
+                ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບເງິນຝາກ ສາຍທາລາ ມຸ່ງໝັ້ນບໍລິການດ້ວຍຄວາມໂປ່ງໃສ ປາສະຈາກຄ່າທຳນຽມແອບແຝງ
+              </span>
+            </div>
+            <div class="flex items-center gap-spacing-sm">
+              <span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                ເຈົ້າໜ້າທີ່ພ້ອມໃຫ້ບໍລິການ 08:30 - 17:00 ໂມງ
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hero Header Section -->
+        <section class="w-full py-spacing-2xl lg:py-spacing-3xl px-margin-desktop bg-surface-bright relative overflow-hidden">
+          <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-surface-container-highest/60 blur-3xl pointer-events-none"></div>
+          <div class="max-w-[1280px] mx-auto relative z-10">
+            <div class="max-w-3xl flex flex-col gap-spacing-md">
+              <div class="inline-flex items-center gap-spacing-xs bg-surface-container-low px-spacing-sm py-spacing-2xs rounded-full shadow-sm w-fit">
+                <span class="material-symbols-outlined text-secondary text-[18px]">support_agent</span>
+                <span class="font-label-md text-label-md text-on-surface-variant">
+                  ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບເງິນຝາກ • ພ້ອມບໍລິການ ແລະ ຮັບຟັງທ່ານ
+                </span>
+              </div>
+              <h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">ຕິດຕໍ່ພວກເຮົາ</h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                ພ້ອມໃຫ້ຄຳປຶກສາ ແລະ ບໍລິການດ້ານສິນເຊື່ອລາຍຍ່ອຍ ເພື່ອສ້າງໂອກາດທາງການເງິນໃຫ້ກັບທ່ານ ແລະ ທຸລະກິດລະດັບຮາກຖານ ດ້ວຍຄວາມໂປ່ງໃສ, ວ່ອງໄວ ແລະ ເປັນທຳ
+              </p>
+              <div class="flex flex-wrap items-center gap-spacing-md pt-spacing-xs">
+                <div class="flex items-center gap-spacing-xs bg-surface-container-lowest px-spacing-md py-spacing-xs rounded-lg shadow-sm">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                  <span class="font-label-md text-label-md text-on-surface font-semibold">ໃຫ້ຄຳປຶກສາຟຣີ ບໍ່ມີຄ່າໃຊ້ຈ່າຍ</span>
+                </div>
+                <div class="flex items-center gap-spacing-xs bg-surface-container-lowest px-spacing-md py-spacing-xs rounded-lg shadow-sm">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">lock</span>
+                  <span class="font-label-md text-label-md text-on-surface font-semibold">ບໍ່ມີນະໂຍບາຍຮັບເງິນຝາກ</span>
+                </div>
+                <div class="flex items-center gap-spacing-xs bg-surface-container-lowest px-spacing-md py-spacing-xs rounded-lg shadow-sm">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+                  <span class="font-label-md text-label-md text-on-surface font-semibold">ຕອບກັບພາຍໃນ 24 ຊົ່ວໂມງລັດຖະການ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Photo & Team Presence Slice -->
+        <section class="w-full px-margin-desktop -mt-8 relative z-20">
+          <div class="max-w-[1280px] mx-auto">
+            <div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+              <div class="lg:col-span-5 relative min-h-[280px] lg:min-h-[360px]">
+                <img class="w-full h-full object-cover" data-alt="Modern bright corporate meeting room" src="img/contect.jpg"/>
+              </div>
+              <div class="lg:col-span-7 p-spacing-xl flex flex-col justify-center gap-spacing-md bg-surface-container-low">
+                <div class="flex items-center gap-spacing-xs text-secondary font-label-md text-label-md uppercase tracking-wider">
+                  <span class="material-symbols-outlined text-[20px]">groups</span>
+                  <span>ທີ່ປຶກສາທາງການເງິນປະຈຳສາຂາ</span>
+                </div>
+                <h2 class="font-headline-md text-headline-md text-on-surface">
+                  ເຂົ້າເຖິງງ່າຍ ໂປ່ງໃສ ພູດຄຸຍດ້ວຍຄວາມເຂົ້າໃຈໃນວິຖີທຸລະກິດຂອງທ່ານ
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  ບໍ່ວ່າທ່ານຈະເປັນຜູ້ປະກອບການລາຍຍ່ອຍ, ພໍ່ຄ້າແມ່ຄ້າ ຫຼື ເຈົ້າຂອງກິດຈະການຄອບຄົວ ທີມງານສາຍທາລາພ້ອມຊ່ວຍວິເຄາະແຜນການເງິນ ຄັດເລືອກສິນເຊື່ອທີ່ສອດຄ່ອງກັບສັກກະຍະພາບ ໂດຍຍຶດຖືຫຼັກຈັນຍາບັນ ແລະ ການປົກປ້ອງສິດທິຜູ້ຊົມໃຊ້ສູງສຸດ
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-spacing-md pt-spacing-xs">
+                  <div class="bg-surface-container-lowest p-spacing-sm rounded-lg shadow-sm">
+                    <span class="font-numeric-stat text-numeric-stat text-secondary block">100%</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">ຄວາມໂປ່ງໃສດອກເບ້ຍ</span>
+                  </div>
+                  <div class="bg-surface-container-lowest p-spacing-sm rounded-lg shadow-sm">
+                    <span class="font-numeric-stat text-numeric-stat text-on-surface block">0 ₭</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">ຄ່າປະເມີນເບື້ອງຕົ້ນ</span>
+                  </div>
+                  <div class="bg-surface-container-lowest p-spacing-sm rounded-lg shadow-sm col-span-2 sm:col-span-1">
+                    <span class="font-numeric-stat text-numeric-stat text-secondary block">4.9/5</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">ຄວາມເພິ່ງພໍໃຈໃນການບໍລິການ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Two-Column Contact Section -->
+        <section class="w-full py-spacing-3xl px-margin-desktop">
+          <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-xl items-start">
+              
+              <!-- Left Column -->
+              <div class="lg:col-span-5 flex flex-col gap-spacing-lg">
+                <div class="flex items-center gap-spacing-xs">
+                  <span class="w-3 h-3 rounded-full bg-secondary"></span>
+                  <span class="font-label-md text-label-md text-secondary uppercase tracking-wider">
+                    ຂໍ້ມູນຕິດຕໍ່ທາງການ (OFFICIAL CONTACT)
+                  </span>
+                </div>
+                
+                <!-- Office Address Card -->
+                <div class="bg-surface-container-lowest p-spacing-xl rounded-xl shadow-sm flex flex-col gap-spacing-md relative overflow-hidden">
+                  <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary-container mb-spacing-2xs">
+                    <span class="material-symbols-outlined text-[26px]">corporate_fare</span>
+                  </div>
+                  <div class="flex flex-col gap-spacing-2xs">
+                    <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">ສຳນັກງານໃຫຍ່ ນະຄອນຫຼວງວຽງຈັນ</span>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface">ສຳນັກງານໃຫຍ່ ສາຍທາລາ (Saythala Head Office)</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                      ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ<br/>
+                      (Lane tha duea, phunmun Village, sisattanak District, Vientiane Capital, Lao PDR)
+                    </p>
+                  </div>
+                  <div class="pt-spacing-xs flex items-center gap-spacing-xs text-on-surface-variant font-body-sm text-body-sm">
+                    <span class="material-symbols-outlined text-[18px] text-secondary">distance</span>
+                    <span>ໃກ້ກັບສະຖານທີ່ສຳຄັນ: ສະຖານທູດລັດເຊຍ (Embassy of Russia) ແລະ ຕະຫຼາດສວນມອນ (suan mone market)</span>
+                  </div>
+                </div>
+
+                <!-- Direct Communication Channels -->
+                <div class="bg-surface-container-lowest p-spacing-xl rounded-xl shadow-sm flex flex-col gap-spacing-md">
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-spacing-xs">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">contact_phone</span>
+                    ຊ່ອງທາງການສື່ສານໂດຍກົງ
+                  </h4>
+                  <div class="space-y-spacing-sm">
+                    <a class="flex items-start gap-spacing-md p-spacing-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="tel:+856 20 59 553 333">
+                      <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">call</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">ສາຍດ່ວນຕິດຕໍ່ສອບຖາມ (Direct Line)</span>
+                        <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">+856 20 59 553 333</span>
+                        <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">+856 20 52 413 333</span>
+                        <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">+856 20 54 223 333</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">ມືຖືສາຍດ່ວນ: +856 20 59 553 333, 020 52 413 333,020 54 223 333</span>
+                      </div>
+                    </a>
+
+                    <a class="flex items-center justify-between p-spacing-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="https://wa.me/8562059553333" rel="noopener noreferrer" target="_blank">
+                      <div class="flex items-center gap-spacing-md">
+                        <div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                          <span class="material-symbols-outlined text-[22px]">chat</span>
+                        </div>
+                        <div class="flex flex-col">
+                          <span class="font-label-sm text-label-sm text-on-surface-variant">ແຊັດຜ່ານ WhatsApp ທາງການ</span>
+                          <span class="font-label-md text-label-md text-on-surface font-semibold">+856 20 59 553 333</span>
+                        </div>
+                      </div>
+                      <span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary text-on-secondary px-spacing-sm py-spacing-2xs rounded-full">
+                        ຄລິກຄຸຍທັນທີ
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                      </span>
+                    </a>
+
+                    <a class="flex items-start gap-spacing-md p-spacing-sm rounded-lg bg-surface hover:bg-surface-container transition-colors group" href="mailto:contact@saythala-mfi.com">
+                      <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">ອີເມວສຳລັບລູກຄ້າ ແລະ ຄຳຮ້ອງຮຽນ</span>
+                        <span class="font-label-md text-label-md text-on-surface font-semibold">saythala.microfinance@gmail.com</span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">saythala.microfinance@gmail.com</span>
+                      </div>
+                    </a>
+
+                    <div class="flex items-center gap-spacing-md p-spacing-sm rounded-lg bg-surface">
+                      <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">public</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant">ເພຈທາງການ (Facebook Page)</span>
+                        <span class="font-label-md text-label-md text-on-surface font-semibold">ສະຖາບັນການເງິນຈຸລະພາກທີ່ບໍ່ຮັບເງິນຝາກສາຍທາລາ - Saythala Microfinance</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Operating Hours Card -->
+                <div class="bg-surface-container-low p-spacing-xl rounded-xl shadow-sm flex flex-col gap-spacing-md">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-spacing-xs">
+                      <span class="material-symbols-outlined text-secondary text-[22px]">schedule</span>
+                      <h4 class="font-headline-sm text-headline-sm text-on-surface">ເວລາເຮັດວຽກ (Operating Hours)</h4>
+                    </div>
+                    <span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-spacing-xs py-spacing-2xs rounded">
+                      ເປີດບໍລິການປົກກະຕິ
+                    </span>
+                  </div>
+                  <div class="space-y-spacing-xs pt-spacing-xs">
+                    <div class="flex items-center justify-between pb-spacing-xs">
+                      <span class="font-body-md text-body-md text-on-surface font-medium">ວັນຈັນ - ວັນສຸກ</span>
+                      <span class="font-label-md text-label-md text-on-surface font-bold">08:30 - 17:00 ໂມງ</span>
+                    </div>
+                    <div class="flex items-center justify-between pb-spacing-xs">
+                      <span class="font-body-md text-body-md text-on-surface-variant">ວັນເສົາ - ວັນອາທິດ</span>
+                      <span class="font-label-md text-label-md text-error font-medium">ປິດບໍລິການ (Closed)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="font-body-md text-body-md text-on-surface-variant">ວັນພັກລັດຖະການ / ນັກຂັດຕະເລິກ</span>
+                      <span class="font-label-md text-label-md text-error font-medium">ປິດບໍລິການ (Closed)</span>
+                    </div>
+                  </div>
+                  <div class="p-spacing-sm bg-surface-container-lowest rounded-lg shadow-sm flex items-start gap-spacing-xs text-on-surface-variant">
+                    <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+                    <p class="font-body-sm text-body-sm leading-relaxed">
+                      ສຳລັບຂໍ້ຄວາມນອກເວລາເຮັດວຽກ ເຈົ້າໜ້າທີ່ຈະຕິດຕໍ່ກັບໃນວັນເຮັດວຽກຖັດໄປໂດຍໄວທີ່ສຸດ
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Consultation Form -->
+              <div class="lg:col-span-7">
+                <div class="bg-surface-container-lowest p-spacing-xl sm:p-spacing-2xl rounded-xl shadow-md flex flex-col gap-spacing-lg relative">
+                  <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary via-secondary-container to-primary-container rounded-t-xl"></div>
+                  <div class="flex flex-col gap-spacing-2xs pt-spacing-xs">
+                    <div class="inline-flex items-center gap-spacing-xs text-secondary font-label-md text-label-md font-semibold">
+                      <span class="material-symbols-outlined text-[18px]">edit_note</span>
+                      <span>ແບບຟອມຕິດຕໍ່ ແລະ ນັດໝາຍປຶກສາເຈົ້າໜ້າທີ່</span>
+                    </div>
+                    <h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+                      ຝາກຂໍ້ຄວາມ ຫຼື ນັດໝາຍປຶກສາເຈົ້າໜ້າທີ່
+                    </h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                      ກະລຸນາຕື່ມຂໍ້ມູນເບື້ອງຕົ້ນ ທີມງານຜູ້ສິນເຊຶ່ອຈະຕິດຕໍ່ກັບເພື່ອໃຫ້ຄຳປຶກສາຢ່າງກົງໄປກົງມາ ໂດຍບໍ່ມີຄ່າບໍລິການໃດໆ ທັງສິ້ນ
+                    </p>
+                  </div>
+
+                  <!-- Form -->
+                  <form class="flex flex-col gap-spacing-md" id="contactInquiryForm">
+                    <div class="flex flex-col gap-spacing-2xs">
+                      <label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="fullName">
+                        <span>ຊື່-ນາມສະກຸນ (Full Name) <span class="text-error">*</span></span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">ລະບຸຊື່ຕາມບັດປະຈຳຕົວ ຫຼື ສຳມະໂນຄົວ</span>
+                      </label>
+                      <div class="relative flex items-center">
+                        <span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">person</span>
+                        <input class="w-full h-11 pl-10 pr-spacing-md bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg shadow-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="fullName" name="fullName" placeholder="ສົມຊາຍ ວົງສະຫວັດ" required="" type="text"/>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-spacing-md">
+                      <div class="flex flex-col gap-spacing-2xs">
+                        <label class="font-label-md text-label-md text-on-surface font-medium" for="phone">
+                          ເບີໂທລະສັບ / WhatsApp <span class="text-error">*</span>
+                        </label>
+                        <div class="relative flex items-center">
+                          <span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">phone_iphone</span>
+                          <input class="w-full h-11 pl-10 pr-spacing-md bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg shadow-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="phone" name="phone" placeholder="020 5551 xxxx ຫຼື 081 xxx xxxx" required="" type="tel"/>
+                        </div>
+                      </div>
+                      <div class="flex flex-col gap-spacing-2xs">
+                        <label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="email">
+                          <span>ອີເມວ (Email)</span>
+                          <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">ບໍ່ບັງຄັບ</span>
+                        </label>
+                        <div class="relative flex items-center">
+                          <span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">mail</span>
+                          <input class="w-full h-11 pl-10 pr-spacing-md bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg shadow-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="email" name="email" placeholder="example@mail.com" type="email"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col gap-spacing-2xs">
+                      <label class="font-label-md text-label-md text-on-surface font-medium" for="topic">
+                        ຫົວຂໍ້ທີ່ຕ້ອງການສອບຖາມ (Topic Selection) <span class="text-error">*</span>
+                      </label>
+                      <div class="relative flex items-center">
+                        <span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">category</span>
+                        <select class="w-full h-11 pl-10 pr-10 bg-surface-container-low text-on-surface text-body-md font-body-md rounded-lg shadow-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all appearance-none cursor-pointer" id="topic" name="topic" required="">
+                          <option disabled="" selected="" value="">ກະລຸນາເລືອກຫົວຂໍ້ທີ່ຕ້ອງການປຶກສາ</option>
+                          <option value="loan">ສອບຖາມກ່ຽວກັບບໍລິການສິນເຊື່ອ (Loan Inquiry)</option>
+                          <option value="advisory">ຂໍຄຳປຶກສາທາງການເງິນ (Financial Advisory)</option>
+                          <option value="appointment">ນັດໝາຍເຂົ້າພົບເຈົ້າໜ້າທີ່ (Schedule an Appointment)</option>
+                          <option value="general">ເລື່ອງອື່ນໆ (General Inquiry)</option>
+                        </select>
+                        <span class="material-symbols-outlined absolute right-3 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col gap-spacing-2xs">
+                      <label class="font-label-md text-label-md text-on-surface font-medium flex items-center justify-between" for="message">
+                        <span>ຂໍ້ຄວາມ ຫຼື ລາຍລະອຽດທີ່ຕ້ອງການສອບຖາມ <span class="text-error">*</span></span>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">ຄວາມຍາວຂັ້ນຕ່ຳ 10 ຕົວອັກສອນ</span>
+                      </label>
+                      <textarea class="w-full p-spacing-md bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg shadow-sm focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all resize-y" id="message" name="message" placeholder="ລະບຸຂໍ້ມູນເບື້ອງຕົ້ນ ເຊັ່ນ ປະເພດທຸລະກິດ, ສະຖານທີ່ປະກອບການ, ວົງເງິນທີ່ສົນໃຈ ຫຼື ຊ່ວງເວລາທີ່ສະດວກຮັບສາຍ..." required="" rows="4"></textarea>
+                    </div>
+
+                    <div class="p-spacing-md bg-surface rounded-lg flex items-start gap-spacing-sm">
+                      <input class="mt-1 w-5 h-5 rounded text-secondary focus:ring-secondary focus:ring-2 cursor-pointer" id="consent" name="consent" required="" type="checkbox"/>
+                      <label class="font-body-sm text-body-sm text-on-surface leading-relaxed cursor-pointer select-none" for="consent">
+                        ຂ້າພະເຈົ້າຍິນຍອມໃຫ້ສະຖາບັນການເງິນຈຸນລະພາກປະເພດບໍ່ຮັບເງິນຝາກ ສາຍທາລາ ເກັບກຳ, ຮວບຮວມ ແລະ ໃຊ້ຂໍ້ມູນຂ້າງຕົ້ນເພື່ອການຕິດຕໍ່ກັບ ແລະ ໃຫ້ຄຳປຶກສາ ຕາມນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ (PDPA)
+                      </label>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-spacing-md pt-spacing-xs">
+                      <div class="flex items-center gap-spacing-xs text-on-surface-variant font-body-sm text-body-sm">
+                        <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+                        <span>ຂໍ້ມູນປອດໄພຕາມມາດຕະຖານຮັກສາຄວາມປອດໄພທາງການເງິນ</span>
+                      </div>
+                      <button class="w-full sm:w-auto inline-flex items-center justify-center gap-spacing-xs bg-secondary hover:bg-on-secondary-container text-on-secondary font-headline-sm text-headline-sm px-spacing-xl py-spacing-sm rounded-lg shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2" id="submitBtn" type="submit">
+                        <span>ສົ່ງຂໍ້ຄວາມ / ນັດໝາຍປຶກສາ</span>
+                        <span class="material-symbols-outlined text-[20px]">send</span>
+                      </button>
+                    </div>
+                  </form>
+
+                  <!-- Success Notification Toast -->
+                  <div class="hidden p-spacing-md bg-secondary-container text-on-secondary-container rounded-lg shadow-md flex items-start gap-spacing-sm animate-fade-in" id="formSuccessToast">
+                    <span class="material-symbols-outlined text-[24px] text-secondary shrink-0">task_alt</span>
+                    <div class="flex flex-col gap-spacing-2xs">
+                      <h5 class="font-headline-sm text-headline-sm font-bold text-on-surface">ບັນທຶກຂໍ້ມູນຮຽບຮ້ອຍແລ້ວ!</h5>
+                      <p class="font-body-md text-body-md text-on-surface">
+                        ເຈົ້າໜ້າທີ່ຝ່າຍບໍລິການສິນເຊື່ອເຊທາລາໄດ້ຮັບຄຳຂໍຂອງທ່ານແລ້ວ ແລະ ຈະທຳການກວດສອບພ້ອມຕິດຕໍ່ກັບຜ່ານເບີໂທລະສັບ ຫຼື WhatsApp ພາຍໃນ 24 ຊົ່ວໂມງລັດຖະການ
+                      </p>
+                      <div class="pt-spacing-2xs">
+                        <span class="font-label-sm text-label-sm bg-surface-container-lowest px-spacing-xs py-spacing-2xs rounded text-on-surface">
+                          ລະຫັດອ້າງອີງຄຳຂໍ: <div id="STL-2025"></div>-<span id="refCode">8941</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="w-full py-spacing-2xl px-margin-desktop bg-surface-container-low">
+          <div class="max-w-[1280px] mx-auto flex flex-col gap-spacing-xl">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-spacing-md">
+              <div class="flex flex-col gap-spacing-2xs">
+                <div class="flex items-center gap-spacing-xs text-secondary font-label-md text-label-md">
+                  <span class="material-symbols-outlined text-[20px]">map</span>
+                  <span>ທີ່ຕັ້ງ ແລະ ການເດີນທາງ</span>
+                </div>
+                <h2 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+                  ແຜນທີ່ສຳນັກງານໃຫຍ່ ສາຍທາລາ (Saythala Head Office Map)
+                </h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                  ຕັ້ງຢູ່ໃຈກາງເຂດທຸລະກິດ ແລະ ການເງິນ ຖະໜົນລ້ານຊ້າງ ນະຄອນຫຼວງວຽງຈັນ ເດີນທາງສະດວກ ພ້ອມບ່ອນຈອດລົດສຳລັບຜູ້ມາຕິດຕໍ່
+                </p>
+              </div>
+              <a class="inline-flex items-center gap-spacing-xs bg-surface-container-lowest hover:bg-surface text-on-surface px-spacing-lg py-spacing-xs rounded-lg shadow-sm font-label-md text-label-md transition-all shrink-0 w-fit" href="https://maps.app.goo.gl/fwcyp1uWAB9eDDkU7?g_st=awb" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-secondary text-[20px]">open_in_new</span>
+                <span>ເປີດໃນ Google Maps</span>
+              </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-spacing-lg bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+              <div class="lg:col-span-8 min-h-[380px] relative">
+                <div class="w-full h-full min-h-[380px] bg-cover bg-center" data-location="Lane Xang Avenue, Hatsady, Chanthabouly, Vientiane, Laos" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTTasukn7GsTgbjUljqw1_ZKzZKPx1EZtlu87r54lHJ-x1VFyPdiV4E8GVXcxc69ZV8MoqnUvaLid48qy-ObpagOs6v7UgRoU1rTZfg86l5yc3eax0Alr99FIIO_qsriZkZoyD-L1IDBb7f86Vb9H_KziE-Xg19btRoVYTmZXoSXpqcJyHdLii5bcPcNG-mN2pFM5eQTAxvkVHknH-szeq3MbRV1u7WZ1oiMOBW4glwed6XOjg18yelQ')">
+                  <div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:max-w-sm bg-surface-container-lowest/95 backdrop-blur-sm p-spacing-md rounded-xl shadow-lg flex items-start gap-spacing-sm">
+                    <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm">
+                      <span class="material-symbols-outlined text-[20px]">location_on</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="font-label-md text-label-md text-on-surface font-bold">ສຳນັກງານໃຫຍ່ ສະຖາບັນການເງິນຈຸນລະພາກສາຍທາລາ</span>
+                      <span class="font-body-sm text-body-sm text-on-surface-variant">ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ນະຄອນຫຼວງວຽງຈັນ</span>
+                      <div class="flex items-center gap-2 mt-1">
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                        <span class="font-label-sm text-label-sm text-secondary font-semibold">ເປີດໃຫ້ບໍລິການຢູ່ຂະນະນີ້</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 p-spacing-xl flex flex-col justify-between gap-spacing-md bg-surface-container-low">
+                <div class="flex flex-col gap-spacing-md">
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">ຈຸດສັງເກດ ແລະ ການເດີນທາງ</h4>
+                  <ul class="space-y-spacing-sm">
+                    <li class="flex items-start gap-spacing-xs">
+                      <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">flag</span>
+                      <div>
+                        <span class="font-label-md text-label-md text-on-surface block">ຕືກເອລິດ (Elite Town)</span>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">ອາຄານເອລີດ ທາວເວີ້, ຊັ້ນ6, ບ້ານ ພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-spacing-xs">
+                      <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">storefront</span>
+                      <div>
+                        <span class="font-label-md text-label-md text-on-surface block">ສູນການຄ້າຕະຫຼາດສວນມອນ (suan mone market)</span>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">ເດີນທາງພຽງ 3 ນາທີຈາກຕະຫຼາດສວນມອນ</p>
+                      </div>
+                    </li>
+                    <li class="flex items-start gap-spacing-xs">
+                      <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">local_parking</span>
+                      <div>
+                        <span class="font-label-md text-label-md text-on-surface block">ສິ່ງອຳນວຍຄວາມສະດວກ</span>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">ມີບ່ອນຈອດລົດ ແລະ ລົດຈັກສະເພາະສຳລັບລູກຄ້າຍ່າງເຂົ້າສູ່ອາຄານໄດ້ສະດວກ</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-surface-container-lowest p-spacing-md rounded-lg shadow-sm flex flex-col gap-spacing-2xs">
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ສອບຖາມເສັ້ນທາງດ່ວນ</span>
+                  <div class="flex items-center justify-between">
+                    <span class="font-headline-sm text-headline-sm text-secondary font-bold">+856 20 5422 3333</span>
+                    <a class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm" href="tel:+8562054223333">
+                      <span class="material-symbols-outlined text-[16px]">phone</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="w-full py-spacing-3xl px-margin-desktop bg-surface">
+          <div class="max-w-[1280px] mx-auto flex flex-col gap-spacing-2xl">
+            <div class="text-center max-w-2xl mx-auto flex flex-col items-center gap-spacing-2xs">
+              <div class="inline-flex items-center gap-spacing-xs text-secondary font-label-md text-label-md uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[18px]">help</span>
+                <span>ຄຳຖາມທີ່ພົບບ່ອຍ</span>
+              </div>
+              <h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">
+                ຄຳຖາມທີ່ພົບບ່ອຍກ່ຽວກັບການຕິດຕໍ່ ແລະ ບໍລິການ
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                ຄວາມຊັດເຈນ ແລະ ຄວາມໂປ່ງໃສຄືຫົວໃຈສຳຄັນໃນການໃຫ້ບໍລິການຂອງສະຖາບັນການເງິນ ສາຍທາລາ
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-spacing-lg items-stretch">
+              <div class="bg-surface-container-lowest p-spacing-xl rounded-xl shadow-sm flex flex-col justify-between gap-spacing-md">
+                <div class="flex flex-col gap-spacing-sm">
+                  <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">01</div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">ສະຖາບັນຮັບຝາກເງິນຫຼືບໍ່?</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <strong>ສາຍທາລາເປັນສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ (Non-Deposit Taking Microfinance)</strong> ທີ່ໄດ້ຮັບອະນຸຍາດຢ່າງຖືກຕ້ອງ ມຸ່ງເນັ້ນການໃຫ້ບໍລິການສິນເຊື່ອເພື່ອປະກອບອາຊີບ ແລະ ເສີມສ້າງຄວາມຮູ້ທາງການເງິນເທົ່ານັ້ນ ບໍ່ມີນະໂຍບາຍລະດົມທຶນ ຫຼື ຮັບເງິນຝາກແບບທົ່ວໄປ
+                  </p>
+                </div>
+                <div class="pt-spacing-xs flex items-center gap-spacing-xs text-secondary font-label-sm text-label-sm font-semibold">
+                  <span class="material-symbols-outlined text-[16px]">verified</span>
+                  <span>ກົດລະບຽບການດຳເນີນງານຕາມໃບອະນຸຍາດ</span>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-spacing-xl rounded-xl shadow-sm flex flex-col justify-between gap-spacing-md">
+                <div class="flex flex-col gap-spacing-sm">
+                  <div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-bold">02</div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">ຕ້ອງກຽມເອກະສານຫຍັງແດ່ໃນການຂໍຄຳປຶກສາ?</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    ສຳລັບການປຶກສາເບື້ອງຕົ້ນ <strong>ທ່ານຍັງບໍ່ຈຳເປັນຕ້ອງກຽມເອກະສານໃດໆ</strong> ສາມາດເຂົ້າມາພູດຄຸຍ ຫຼື ສົ່ງຂໍ້ຄວາມຜ່ານແບບຟອມໄດ້ທັນທີ ຫາກຕັດສິນໃຈຍື່ນຂໍສິນເຊື່ອ ເຈົ້າໜ້າທີ່ຈະແນະນຳເອກະສານຢັ້ງຢືນຕົວຕົນ ແລະ ບັນທຶກລາຍຮັບ-ລາຍຈ່າຍທີ່ຮຽບງ່າຍຕາມຄວາມເໝາະສົມ
+                  </p>
+                </div>
+                <div class="pt-spacing-xs flex items-center gap-spacing-xs text-secondary font-label-sm text-label-sm font-semibold">
+                  <span class="material-symbols-outlined text-[16px]">fact_check</span>
+                  <span>ຂະບວນການພິຈາລະນາທີ່ເປັນທຳ ແລະ ວ່ອງໄວ</span>
+                </div>
+              </div>
+
+              <div class="bg-surface-container-lowest p-spacing-xl rounded-xl shadow-sm flex flex-col justify-between gap-spacing-md">
+                <div class="flex flex-col gap-spacing-sm">
+                  <div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">03</div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">ມີຄ່າໃຊ້ຈ່າຍ ຫຼື ຄ່າທຳນຽມໃນການປຶກສາຫຼືບໍ່?</h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    <strong>ບໍ່ມີຄ່າໃຊ້ຈ່າຍແອບແຝງໃດໆ ທັງສິ້ນ 100%</strong> ບໍລິການໃຫ້ຄຳປຶກສາທາງການເງິນ ແລະ ການວິເຄາະສັກກະຍະພາບຄວາມສາມາດໃນການຊຳລະໜີ້ຂອງເຊທາລາແມ່ນໃຫ້ບໍລິການຟຣີ ບໍ່ມີການຮຽກເກັບເງິນລ່ວງໜ້າຈາກຜູ້ໃດທັງສິ້ນ ແຈ້ງເຈົ້າໜ້າທີ່ກວດສອບທັນທີ
+                  </p>
+                </div>
+                <div class="pt-spacing-xs flex items-center gap-spacing-xs text-secondary font-label-sm text-label-sm font-semibold">
+                  <span class="material-symbols-outlined text-[16px]">shield</span>
+                  <span>ຄຸ້ມຄອງຜູ້ໃຊ້ບໍລິການຕາມຫຼັກຈັນຍາບັນ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compliance Banner -->
+        <section class="w-full py-spacing-xl px-margin-desktop bg-surface-container-low">
+          <div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-spacing-lg p-spacing-xl rounded-xl bg-surface-container-lowest shadow-sm">
+            <div class="flex items-center gap-spacing-md">
+              <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+                <span class="material-symbols-outlined text-[28px]">policy</span>
+              </div>
+              <div class="flex flex-col">
+                <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                  ຂໍ້ຄວນລະວັງ ແລະ ການຄຸ້ມຄອງຜູ້ຊົມໃຊ້
+                </h4>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  ສະຖາບັນການເງິນຈຸນລະພາກປະເພດບໍ່ຮັບເງິນຝາກ ສາຍທາລາ ບໍ່ມີນະໂຍບາຍໃຫ້ໂອນຄ່າທຳນຽມ ຫຼື ເງິນຄ້ຳປະກັນລ່ວງໜ້າເຂົ້າບັນຊີສ່ວນບຸກຄົນໃດໆ ທັງສິ້ນ ຕິດຕໍ່ສະເພາະຊ່ອງທາງທາງການທີ່ລະບຸໃນເວັບໄຊນີ້ເທົ່ານັ້ນ
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-spacing-sm shrink-0">
+              <a class="inline-flex items-center gap-spacing-xs bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md px-spacing-md py-spacing-xs rounded-lg transition-colors" href="tel:+85621214890">
+                <span class="material-symbols-outlined text-[18px]">report</span>
+                <span>ແຈ້ງເລື່ອງຮ້ອງຮຽນ</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-primary-container text-on-surface-variant pt-spacing-3xl pb-spacing-xl border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-spacing-xl pb-spacing-2xl border-b border-outline-variant/15">
+        <div class="lg:col-span-4 flex flex-col gap-spacing-md">
+          <div class="flex items-center gap-spacing-sm">
+            <span class="font-headline-md text-headline-md text-surface-bright tracking-tight">ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບຝາກ ສາຍທາລາ</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">ສ້າງຄວາມເຂັ້ມແຂງໃຫ້ແກ່ຊຸມຊົນ ແລະ ຜູ້ປະກອບການຂະໜາດນ້ອຍ ຜ່ານສິນເຊື່ອທີ່ເຂົ້າເຖິງງ່າຍ, ໂປ່ງໃສ, ບໍ່ຮັບເງິນຝາກ.</p>
+          <div class="bg-surface-variant/10 rounded-lg p-spacing-sm border border-outline-variant/20 max-w-sm">
+            <div class="flex items-center gap-spacing-xs text-secondary-fixed mb-spacing-2xs">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span class="font-label-sm text-label-sm tracking-wide font-semibold">ສະຖາບັນທີ່ໄດ້ຮັບອະນຸຍາດຖືກຕ້ອງ</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-primary-container">ໄດ້ຮັບອະນຸຍາດເປັນສະຖາບັນການເງິນຈຸນລະພາກທີ່ບໍ່ຮັບເງິນຝາກ ພາຍໃຕ້ການກຳກັບດູແລຂອງທະນາຄານແຫ່ງ ສປປ ລາວ.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ໜ້າຫຼັກ</span>
+          <ul class="flex flex-col gap-spacing-xs">
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="home" href="index.html">ໜ້າຫຼັກ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="about-us" href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-services" href="services.html">ບໍລິການສິນເຊຶ່ອ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="financial-literacy" href="Lresource.html">ຄັງຄວາມຮູ້ທາງການເງິນ</a></li>
+            <li role="none"><a class="font-body-md text-body-md text-on-primary-container hover:text-surface-bright transition-colors" data-path="contact-us" href="contact.html">ຕິດຕໍ່ພວກເຮົາ</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+          
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-spacing-sm">
+          <span class="font-label-md text-label-md text-surface-bright font-semibold">ສຳນັກງານໃຫຍ່ &amp; ຂໍ້ມູນຕິດຕໍ່</span>
+          <div class="flex flex-col gap-spacing-xs font-body-md text-body-md text-on-primary-container">
+            <p class="text-on-primary-container">ຖະໜົນທ່າເດືອ, ບ້ານພັນໝັ້ນ, ເມືອງສີສັດຕະນາກ, ນະຄອນຫຼວງວຽງຈັນ, ສປປ ລາວ</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ໂທ:</span> +856 20 54 223 333 , 020 52 413 333 / WhatsApp: +856 20 59 553 333</p>
+            <p class="text-on-primary-container"><span class="text-surface-bright font-label-md">ອີເມວ:</span> saythala.microfinance@gmail.com</p>
+            <div class="pt-spacing-2xs border-t border-outline-variant/15 mt-spacing-2xs">
+              <span class="font-label-sm text-label-sm text-surface-bright block">ໂມງລັດຖະການ</span>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ຈັນ - ສຸກ: 08:30 - 17:00</p>
+              <p class="font-body-sm text-body-sm text-on-primary-container">ເສົາ - ອາທິດ: ປິດ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-spacing-lg flex flex-col sm:flex-row items-center justify-between gap-spacing-md">
+        <p class="font-body-sm text-body-sm text-on-primary-container">© 2025 ສະຖາບັນການເງິນຈຸນລະພາກທີບໍ່ຮັບເງິນຝາກ ສາຍທາລາ . ສະຫງວນລິຂະສິດ.</p>
+        <div class="flex items-center gap-spacing-md font-body-sm text-body-sm text-on-primary-container">
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Tailwind Config Extensions Applied via Raw CSS Variable Rules */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #006c4a;
+  --color-surface: #f8f9ff;
+  --color-surface-container: #e6eeff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #0d1c2e;
+  --color-on-surface-variant: #44474d;
+}
