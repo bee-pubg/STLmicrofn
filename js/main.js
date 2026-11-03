@@ -25,7 +25,7 @@ const articlesData = [
   },
   {
     id: 3,
-    articlePath: "reserves-fund.html",
+    articlePath: "reserver-fund.html",
     title: "ເປັນຫຍັງການມີກອງທຶນສຳຮອງຈຶ່ງສຳຄັນກັບເຈົ້າຂອງທຸລະກິດ?",
     categoryKey: "reserves-fund",
     categoryName: "ເງິນທຶນໝຸນວຽນ",
